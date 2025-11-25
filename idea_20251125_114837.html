@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Project Memoro Nexus — Readwise + Anki，端到端記住你學的一切</title>
+  <meta name="description" content="Memoro Nexus：將 Readwise 的精華擷取與 Anki 的長期記憶結合。匯入任何內容、擷取重點、以間隔重複牢牢記住。" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .subtle-gradient {
+      background: radial-gradient(1000px 600px at 10% -10%, rgba(59,130,246,0.08), transparent 50%),
+                  radial-gradient(800px 500px at 110% 10%, rgba(59,130,246,0.06), transparent 50%),
+                  linear-gradient(180deg, #fafafa 0%, #ffffff 100%);
+    }
+  </style>
+</head>
+<body class="antialiased text-gray-900 bg-white">
+  <!-- Nav -->
+  <header class="sticky top-0 z-40 bg-white/70 backdrop-blur border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3">
+        <div class="h-9 w-9 rounded-lg bg-blue-600 text-white flex items-center justify-center font-bold">MN</div>
+        <span class="font-semibold tracking-tight">Memoro Nexus</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-8 text-sm">
+        <a href="#problem" class="text-gray-600 hover:text-gray-900 transition">為什麼需要？</a>
+        <a href="#features" class="text-gray-600 hover:text-gray-900 transition">核心功能</a>
+        <a href="#how" class="text-gray-600 hover:text-gray-900 transition">運作方式</a>
+        <a href="#waitlist" class="inline-flex items-center px-4 py-2 rounded-lg bg-blue-600 text-white hover:bg-blue-700 transition transform hover:scale-[1.02]">加入等候名單</a>
+      </nav>
+      <a href="#waitlist" class="md:hidden inline-flex items-center px-3 py-2 rounded-lg bg-blue-600 text-white hover:bg-blue-700 transition">搶先體驗</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative subtle-gradient">
+    <div class="absolute inset-0 -z-10">
+      <img src="https://source.unsplash.com/1600x900/?study,notes,reading" alt="學習與筆記背景圖" class="w-full h-full object-cover opacity-10">
+    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-24">
+      <div class="grid lg:grid-cols-2 gap-10 items-center">
+        <div>
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.1]">
+            Readwise + Anki，端到端記住你學的一切
+          </h1>
+          <p class="mt-6 text-lg sm:text-xl text-gray-700">
+            匯入任何內容（PDF、影片、網頁），自動擷取關鍵重點，透過智能間隔重複把知識真正「記牢」——一次輸入，長久受用。
+          </p>
+          <div class="mt-8 flex flex-col sm:flex-row gap-4">
+            <a href="#waitlist" class="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-blue-600 text-white font-semibold hover:bg-blue-700 transition duration-300 ease-in-out transform hover:scale-[1.03]">
+              加入等候名單
+            </a>
+            <a href="#features" class="inline-flex items-center justify-center px-6 py-3 rounded-xl border border-gray-300 text-gray-900 hover:border-gray-400 hover:bg-gray-50 transition">
+              了解更多
+            </a>
+          </div>
+          <div class="mt-8 flex items-center gap-6 text-sm text-gray-600">
+            <div class="flex items-center gap-2">
+              <span class="h-2.5 w-2.5 rounded-full bg-blue-600"></span> 隱私優先，本地加密
+            </div>
+            <div class="hidden sm:flex items-center gap-2">
+              <span class="h-2.5 w-2.5 rounded-full bg-gray-300"></span> 3 分鐘上手
+            </div>
+          </div>
+        </div>
+        <div class="relative">
+          <div class="rounded-2xl overflow-hidden border border-gray-200 shadow-sm">
+            <img src="https://source.unsplash.com/1200x900/?anki,flashcards,productivity" alt="記憶與複習的卡片流程" class="w-full h-80 sm:h-[28rem] object-cover">
+          </div>
+          <div class="absolute -bottom-6 -right-6 hidden md:block">
+            <div class="bg-white border border-gray-200 shadow-md rounded-xl px-5 py-3">
+              <p class="text-sm text-gray-700"><span class="font-semibold text-blue-600">Memoro Nexus</span> 幫你把「看過」變「記得」。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem-Solution -->
+  <section id="problem" class="py-20 sm:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl sm:text-4xl font-bold tracking-tight">為什麼需要這個？</h2>
+      <div class="mt-10 grid md:grid-cols-2 gap-8">
+        <div class="space-y-6">
+          <div class="p-6 rounded-2xl border border-gray-200 hover:shadow-sm transition">
+            <h3 class="font-semibold text-lg">痛點 1：學習內容四散，重點抓不到</h3>
+            <p class="mt-2 text-gray-700">PDF、影片、網頁到處跑，標註分散、重點難以回顧，時間被切割，效率低。</p>
+            <div class="mt-3 text-blue-600 font-medium">解法：一鍵匯入與統一資料庫，跨來源聚合與搜尋。</div>
+          </div>
+          <div class="p-6 rounded-2xl border border-gray-200 hover:shadow-sm transition">
+            <h3 class="font-semibold text-lg">痛點 2：記了沒記住，複習無系統</h3>
+            <p class="mt-2 text-gray-700">做了筆記卻記不牢，缺乏科學的複習節奏，考前臨時抱佛腳。</p>
+            <div class="mt-3 text-blue-600 font-medium">解法：自動生成重點與卡片，內建間隔重複，真正轉化為長期記憶。</div>
+          </div>
+          <div class="p-6 rounded-2xl border border-gray-200 hover:shadow-sm transition">
+            <h3 class="font-semibold text-lg">痛點 3：維護成本高，工具太多</h3>
+            <p class="mt-2 text-gray-700">在多個工具間切換，導致流程斷裂與重工。</p>
+            <div class="mt-3 text-blue-600 font-medium">解法：從擷取到記憶的端到端工作流，一站整合。</div>
+          </div>
+        </div>
+        <div class="relative">
+          <div class="rounded-2xl overflow-hidden border border-gray-200">
+            <img src="https://source.unsplash.com/1200x900/?research,reading,learning" alt="聚合學習內容與系統化複習" class="w-full h-full object-cover">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="py-20 sm:py-24 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-center">核心功能</h2>
+      <p class="mt-4 text-center text-gray-700 max-w-2xl mx-auto">從匯入、擷取到複習，打造一條龍的學習記憶系統。</p>
+      <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="p-6 bg-white border border-gray-200 rounded-2xl hover:shadow-lg hover:-translate-y-1 transition">
+          <div class="text-3xl">📥</div>
+          <h3 class="mt-4 font-semibold">多來源匯入</h3>
+          <p class="mt-2 text-sm text-gray-700">支援 PDF、YouTube、網頁書籤與剪貼，標註與原文自動對齊。</p>
+        </div>
+        <div class="p-6 bg-white border border-gray-200 rounded-2xl hover:shadow-lg hover:-translate-y-1 transition">
+          <div class="text-3xl">✨</div>
+          <h3 class="mt-4 font-semibold">重點擷取</h3>
+          <p class="mt-2 text-sm text-gray-700">以語義摘要將長文拆解為要點，並附上來源與跳轉連結。</p>
+        </div>
+        <div class="p-6 bg-white border border-gray-200 rounded-2xl hover:shadow-lg hover:-translate-y-1 transition">
+          <div class="text-3xl">🧠</div>
+          <h3 class="mt-4 font-semibold">卡片生成 + 間隔重複</h3>
+          <p class="mt-2 text-sm text-gray-700">一鍵生成問答卡，根據記憶曲線安排最佳複習時機。</p>
+        </div>
+        <div class="p-6 bg-white border border-gray-200 rounded-2xl hover:shadow-lg hover:-translate-y-1 transition">
+          <div class="text-3xl">🔒</div>
+          <h3 class="mt-4 font-semibold">隱私與同步</h3>
+          <p class="mt-2 text-sm text-gray-700">本地加密與雲端同步並存，資料所有權在你手中。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section id="how" class="py-20 sm:py-24 bg-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-center">運作方式</h2>
+      <div class="mt-12 grid sm:grid-cols-3 gap-8 items-start">
+        <div class="text-center">
+          <div class="mx-auto h-12 w-12 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold">1</div>
+          <h3 class="mt-4 font-semibold">匯入</h3>
+          <p class="mt-2 text-gray-700 text-sm">把 PDF、影片、網頁一鍵放入資料庫，維持原始脈絡。</p>
+        </div>
+        <div class="hidden sm:flex items-center justify-center">
+          <div class="h-0.5 w-12 bg-gray-300"></div>
+          <div class="mx-1 text-gray-400">→</div>
+          <div class="h-0.5 w-12 bg-gray-300"></div>
+        </div>
+        <div class="text-center">
+          <div class="mx-auto h-12 w-12 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold">2</div>
+          <h3 class="mt-4 font-semibold">擷取</h3>
+          <p class="mt-2 text-gray-700 text-sm">自動摘要與關鍵概念萃取，產生高品質筆記與卡片草稿。</p>
+        </div>
+        <div class="hidden sm:flex items-center justify-center">
+          <div class="h-0.5 w-12 bg-gray-300"></div>
+          <div class="mx-1 text-gray-400">→</div>
+          <div class="h-0.5 w-12 bg-gray-300"></div>
+        </div>
+        <div class="text-center">
+          <div class="mx-auto h-12 w-12 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold">3</div>
+          <h3 class="mt-4 font-semibold">記住</h3>
+          <p class="mt-2 text-gray-700 text-sm">間隔重複安排每日複習，追蹤記憶強度，形成長期保留。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Social Proof / Trust -->
+  <section class="py-10 bg-gray-50">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4 border border-gray-200 bg-white rounded-2xl px-6 py-5">
+        <div class="text-gray-800">
+          <span class="font-semibold text-blue-600">已有 1,274 人</span> 加入等候名單
+        </div>
+        <div class="text-sm text-gray-600 flex items-center gap-3">
+          <span class="inline-flex items-center gap-2"><span class="text-lg">🔐</span> 我們重視您的隱私與數據安全</span>
+          <span class="hidden sm:inline text-gray-300">|</span>
+          <span class="inline-flex items-center gap-2"><span class="text-lg">✅</span> 可隨時取消訂閱</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Form -->
+  <section id="waitlist" class="py-20 sm:py-24 bg-white">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">加入等候名單</h2>
+      <p class="mt-4 text-gray-700">成為首批用戶，獲得專屬早鳥優惠與優先試用權。</p>
+      <div class="mt-8">
+<form action="https://hook.us2.make.com/5z0gf5jwihdjvk59wcidkxxtroh52jm1" method="POST" class="max-w-md mx-auto">
+    <input type="hidden" name="idea_name" value="# 🚀 Project Memoro Nexus
+
+> The Hook (一句話鉤子)：
+> Readwise + Anki, end-to-end for everything you study — import anything, get key takeaways, remember for good.
+
+## 1. The Real Problem (真實痛點)
+- 「Studying is painful…」反覆提到在 PDF，影片，網頁分散的疑惑，筆記卻記不住重點，復習沒有系統。
+
+..">
+    <div class="mb-4">
+        <label class="block text-gray-700 text-sm font-semibold mb-2">Email 地址</label>
+        <input 
+            type="email" 
+            name="email" 
+            required 
+            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition" 
+            placeholder="your@email.com">
+    </div>
+    <button 
+        type="submit" 
+        class="w-full bg-black text-white font-semibold py-3 px-6 rounded-lg hover:bg-gray-800 transition duration-300 ease-in-out transform hover:scale-105">
+        立即加入等候名單 →
+    </button>
+</form>
+      </div>
+      <p class="mt-4 text-xs text-gray-500">我們只會在產品可用時通知你，絕不濫發郵件。</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-gray-100 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p class="text-sm text-gray-600">© <span id="y"></span> Memoro Nexus. 版權所有。</p>
+      <div class="flex items-center gap-6 text-sm">
+        <a href="#features" class="text-gray-600 hover:text-gray-900 transition">功能</a>
+        <a href="#how" class="text-gray-600 hover:text-gray-900 transition">流程</a>
+        <a href="#waitlist" class="text-gray-600 hover:text-gray-900 transition">等候名單</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
