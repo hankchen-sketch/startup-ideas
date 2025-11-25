@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dreamake – KOL 的 AI 分身，24h 回 Q&A 幫你穩賺不累</title>
+  <meta name="description" content="10 分鐘生成你的語氣分身，文字/語音自動回覆粉絲，還能導向超額付費。免費加入等候名單，無需信用卡。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // 使用方案 5 - 高級藍（專業服務/諮詢/高端市場）
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { serif: ['Playfair Display', 'serif'] },
+          colors: {
+            'main-bg': '#F7F9FB',
+            'card-bg': '#EEF3F7',
+            'contrast-bg': '#E5EBF2',
+            'dark-bg': '#2A3441',
+            'accent': '#5B7FA8',
+            'accent-hover': '#527297', /* #5B7FA8 深 10% */
+            'icon-bg': '#EBF2F9',
+            'text-main': '#1A1A1A',
+            'text-sub': '#4A5A6D',
+            'text-desc': '#6A7A8D'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="bg-main-bg text-text-sub">
+  <!-- Hero -->
+  <header class="bg-main-bg py-32">
+    <div class="container mx-auto px-6 max-w-5xl text-center">
+      <h1 class="font-serif text-text-main text-5xl md:text-7xl font-bold leading-tight">
+        AI 分身替你回粉，24h 不停歇
+      </h1>
+      <p class="mt-6 text-xl text-text-sub">
+        粉絲私訊爆量，你總在半夜還在回？
+      </p>
+      <p class="mt-2 text-xl text-text-desc">
+        10 分鐘生成你的語氣分身，文字/語音自動解答並導向付費。
+      </p>
+
+      <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="#waitlist" class="inline-flex items-center justify-center bg-accent text-white font-semibold py-4 px-8 rounded-lg hover:bg-accent-hover hover:scale-105 transition">
+          免費建立分身 →
+        </a>
+        <a href="#how-it-works" class="inline-flex items-center justify-center bg-card-bg text-dark-bg font-semibold py-4 px-8 rounded-lg hover:-translate-y-0.5 transition">
+          了解如何運作
+        </a>
+      </div>
+      <p class="mt-6 text-sm text-text-desc">✓ 完全免費　✓ 無需信用卡</p>
+    </div>
+  </header>
+
+  <!-- Problem -->
+  <section class="bg-contrast-bg py-24">
+    <div class="container mx-auto px-6 max-w-6xl">
+      <div class="text-center max-w-3xl mx-auto">
+        <h2 class="font-serif text-4xl md:text-5xl font-bold text-text-main">為什麼你需要它？</h2>
+        <p class="mt-3 text-text-desc">因為這些問題每天都在發生</p>
+      </div>
+
+      <div class="mt-12 grid md:grid-cols-3 gap-6">
+        <!-- Pain 1 -->
+        <div class="bg-card-bg rounded-xl p-8">
+          <div class="w-20 h-20 rounded-2xl bg-icon-bg flex items-center justify-center text-4xl">📥</div>
+          <h3 class="mt-6 font-serif text-2xl text-text-main">訊息爆量，回不完</h3>
+          <p class="mt-2 text-text-desc">
+            合作、器材、課程、檔期… DM 排山倒海。你是否曾經把回覆留到半夜，卻仍然漏訊？
+          </p>
+        </div>
+        <!-- Pain 2 -->
+        <div class="bg-card-bg rounded-xl p-8">
+          <div class="w-20 h-20 rounded-2xl bg-icon-bg flex items-center justify-center text-4xl">⏳</div>
+          <h3 class="mt-6 font-serif text-2xl text-text-main">時間被私訊掏空</h3>
+          <p class="mt-2 text-text-desc">
+            白天拍片剪輯，晚上回覆粉絲。你的黃金創作時間被瑣碎問答佔據。
+          </p>
+        </div>
+        <!-- Pain 3 -->
+        <div class="bg-card-bg rounded-xl p-8">
+          <div class="w-20 h-20 rounded-2xl bg-icon-bg flex items-center justify-center text-4xl">💸</div>
+          <h3 class="mt-6 font-serif text-2xl text-text-main">商機流失、變現困難</h3>
+          <p class="mt-2 text-text-desc">
+            高價諮詢與進階內容無法及時引導，粉絲熱度一過，轉化就少一半。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Transition -->
+  <section class="bg-main-bg py-12">
+    <p class="italic text-center text-text-sub text-lg">現在，這一切都能輕鬆解決</p>
+  </section>
+
+  <!-- Features -->
+  <section class="bg-main-bg py-24">
+    <div class="container mx-auto px-6 max-w-6xl">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Feature 1 -->
+        <div class="bg-card-bg rounded-xl p-8 transition transform hover:-translate-y-1">
+          <div class="w-20 h-20 rounded-full bg-icon-bg flex items-center justify-center text-5xl">⚡</div>
+          <h3 class="mt-6 font-serif text-2xl text-text-main">不錯過任何商機</h3>
+          <p class="mt-2 text-text-desc">分身即時回覆，秒懂粉絲需求，將複雜問答導向一鍵付費。</p>
+        </div>
+        <!-- Feature 2 -->
+        <div class="bg-card-bg rounded-xl p-8 transition transform hover:-translate-y-1">
+          <div class="w-20 h-20 rounded-full bg-icon-bg flex items-center justify-center text-5xl">🗣️</div>
+          <h3 class="mt-6 font-serif text-2xl text-text-main">會學你的語氣</h3>
+          <p class="mt-2 text-text-desc">KOL 語氣建模＋粉絲問題記憶，延續你的風格、脈絡與立場。</p>
+        </div>
+        <!-- Feature 3 -->
+        <div class="bg-card-bg rounded-xl p-8 transition transform hover:-translate-y-1">
+          <div class="w-20 h-20 rounded-full bg-icon-bg flex items-center justify-center text-5xl">⏱️</div>
+          <h3 class="mt-6 font-serif text-2xl text-text-main">10 分鐘完成上線</h3>
+          <p class="mt-2 text-text-desc">從影片/文章自動生成分身，支援文字與語音回答，立即可用。</p>
+        </div>
+        <!-- Feature 4: 動態風格修正 -->
+        <div class="bg-card-bg rounded-xl p-8 transition transform hover:-translate-y-1">
+          <div class="w-20 h-20 rounded-full bg-icon-bg flex items-center justify-center text-5xl">🛡️</div>
+          <h3 class="mt-6 font-serif text-2xl text-text-main">動態風格修正</h3>
+          <p class="mt-2 text-text-desc">
+            內建 Tone Guardrails：以關鍵語彙庫＋禁用清單校正語氣，回覆前後雙重評分，偏離即重寫，穩住人設不跑調。
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-10 text-center text-sm text-text-desc">
+        競品觀察：Character.AI 偏陪聊；OpenAI GPTs 需手動 Prompt。Dreamake 主打「一鍵建人格＋專業 KOL 諮詢」。
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section id="how-it-works" class="bg-contrast-bg py-24">
+    <div class="container mx-auto px-6 max-w-5xl">
+      <h2 class="font-serif text-4xl md:text-5xl font-bold text-text-main text-center">如何開始</h2>
+
+      <div class="mt-12 grid md:grid-cols-3 gap-8">
+        <!-- Step 1 -->
+        <div class="bg-card-bg rounded-xl p-8">
+          <div class="w-16 h-16 rounded-full bg-accent text-white flex items-center justify-center text-2xl font-bold">1</div>
+          <h3 class="mt-6 font-serif text-2xl text-text-main">上傳內容素材</h3>
+          <p class="mt-2 text-text-desc">匯入你的影片與文章，建立語氣與知識庫。</p>
+        </div>
+        <!-- Step 2 -->
+        <div class="bg-card-bg rounded-xl p-8">
+          <div class="w-16 h-16 rounded-full bg-accent text-white flex items-center justify-center text-2xl font-bold">2</div>
+          <h3 class="mt-6 font-serif text-2xl text-text-main">一鍵建人格</h3>
+          <p class="mt-2 text-text-desc">自動生成分身＋Tone Guardrails，確保風格一致。</p>
+        </div>
+        <!-- Step 3 -->
+        <div class="bg-card-bg rounded-xl p-8">
+          <div class="w-16 h-16 rounded-full bg-accent text-white flex items-center justify-center text-2xl font-bold">3</div>
+          <h3 class="mt-6 font-serif text-2xl text-text-main">部署到頻道</h3>
+          <p class="mt-2 text-text-desc">連到 IG/YouTube/官網，即時回覆並導向超額付費。</p>
+        </div>
+      </div>
+
+      <p class="mt-10 text-center text-text-sub">就是這麼簡單！現在就開始吧👇</p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="waitlist" class="bg-dark-bg py-32">
+    <div class="container mx-auto px-6 max-w-3xl text-center">
+      <h2 class="font-serif text-4xl md:text-5xl font-bold text-main-bg">成為首批體驗者</h2>
+      <p class="mt-3 text-lg text-contrast-bg">提早加入，獲得專屬優惠🎁</p>
+
+      <form action="https://hook.us2.make.com/5z0gf5jwihdjvk59wcidkxxtroh52jm1" method="POST" class="max-w-md mx-auto mt-8">
+        <input type="hidden" name="idea_name" value="🔥 Dreamake – KOL 的AI分身，24h回Q&A幫你穩賺不累
+
+😤 誰在崩潰？  
+> “粉絲 DM 堆爆，留到晚上回光也回不完！”
+
+🛠️ 我們的切入點  
+核心功能：10 分鐘自動從影片/文章生成分身，文字/語音回答＋超額付費  
+技術亮點：KOL 語氣建模 ＋ 粉絲問題記憶
+
+🥊 競品雷達 (Competitor Watch)  
+* Character.AI (https://beta.character.ai)：角色陪聊 vs Dreamake：專業 KOL 諮詢  
+* OpenAI GPTs (https://platform.openai.com)：Prompt 驅動 vs Dreamake：一鍵建人格
+
+---  
+🤔 團隊腦力激盪：  
+想確保分身始終不跑 tone，若要在系統層面做「動態風格修正」，你會怎麼設計校正機制？">
+        <input type="email" name="email" required 
+               class="w-full px-6 py-4 border-2 border-white/20 bg-white/10 text-white placeholder-white/60 rounded-lg focus:ring-2 focus:ring-accent outline-none" 
+               placeholder="輸入你的 Email">
+        <button type="submit" 
+                class="w-full bg-accent text-white font-bold py-4 px-8 rounded-lg hover:bg-accent-hover hover:scale-105 transition mt-4">
+          立即加入等候名單 →
+        </button>
+      </form>
+
+      <p class="mt-4 text-sm text-card-bg">✓ 我們重視隱私　✓ 隨時可取消</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-main-bg py-8">
+    <p class="text-center text-sm text-text-desc">
+      © 2025 Dreamake. 不是 OpenAI 或 Character.AI 之官方產品。All rights reserved.
+    </p>
+  </footer>
+</body>
+</html>
