@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>OrderEase — 自助訂單編輯，30 秒安裝 | 降低客服取消重下單工單</title>
+  <meta name="description" content="OrderEase 讓中小型電商提供顧客自助編輯訂單功能。30 秒安裝，顯著降低因取消與重下單產生的客服工單量，提升轉單率與顧客體驗。">
+  <meta property="og:title" content="OrderEase — 自助訂單編輯，30 秒安裝">
+  <meta property="og:description" content="Self‑serve order editing for SMB e‑commerce — install in 30 seconds, slash CX tickets from “cancel & reorder”.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://source.unsplash.com/1200x630/?ecommerce,shopping">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%230F172A'/%3E%3Cpath d='M50 18l10 22 24 4-18 16 5 24-21-12-21 12 5-24-18-16 24-4z' fill='%23A78BFA'/%3E%3C/svg%3E">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="antialiased text-slate-800">
+  <!-- Background -->
+  <div class="fixed inset-0 -z-10 bg-gradient-to-b from-slate-50 via-white to-slate-50"></div>
+
+  <!-- Navbar -->
+  <header class="relative">
+    <div class="mx-auto max-w-7xl px-6 py-5 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-2">
+        <span class="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-indigo-600 text-white font-semibold">OE</span>
+        <span class="text-xl font-semibold tracking-tight">OrderEase</span>
+      </a>
+      <nav class="hidden sm:flex items-center gap-6 text-sm">
+        <a href="#features" class="text-slate-600 hover:text-slate-900">功能亮點</a>
+        <a href="#signup" class="text-slate-600 hover:text-slate-900">加入等候名單</a>
+        <a href="#cta" class="inline-flex items-center rounded-md bg-slate-900 px-4 py-2 text-white text-sm font-medium hover:bg-slate-800">立即體驗</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative">
+    <div class="mx-auto max-w-7xl px-6 pt-10 sm:pt-16 lg:pt-24">
+      <div class="grid lg:grid-cols-2 gap-10 items-center">
+        <div>
+          <div class="inline-flex items-center gap-2 rounded-full bg-indigo-50 px-3 py-1 text-indigo-700 text-xs font-medium ring-1 ring-indigo-100">新創預告</div>
+          <h1 class="mt-4 text-4xl sm:text-5xl font-extrabold tracking-tight text-slate-900">
+            自助訂單編輯，30 秒安裝
+          </h1>
+          <p class="mt-4 text-lg text-slate-600">
+            Self‑serve order editing for SMB e‑commerce — install in 30 seconds, slash CX tickets from “cancel & reorder”.
+          </p>
+          <p class="mt-2 text-slate-600">
+            讓顧客自行修改地址、商品規格或數量，減少取消重下單與客服成本，同時提升轉換率。
+          </p>
+          <div class="mt-8 flex flex-col sm:flex-row gap-3">
+            <a href="#signup" class="inline-flex items-center justify-center rounded-md bg-indigo-600 px-5 py-3 text-white font-medium shadow-sm hover:bg-indigo-700">我有興趣（加入等待名單）</a>
+            <a href="#features" class="inline-flex items-center justify-center rounded-md border border-slate-300 px-5 py-3 text-slate-700 font-medium hover:bg-slate-50">了解功能</a>
+          </div>
+          <div class="mt-4 text-xs text-slate-500">不會寄垃圾信，隨時可取消訂閱。</div>
+        </div>
+        <div class="relative">
+          <div class="absolute -inset-4 -z-10 bg-gradient-to-tr from-indigo-100 via-purple-100 to-transparent rounded-3xl blur-2xl"></div>
+          <img src="https://source.unsplash.com/800x600/?ecommerce,store" alt="OrderEase cover" class="w-full rounded-2xl shadow-lg ring-1 ring-slate-200 object-cover">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Social proof -->
+  <section class="mt-16 sm:mt-20">
+    <div class="mx-auto max-w-7xl px-6">
+      <div class="flex items-center gap-6 flex-wrap opacity-80">
+        <img src="https://source.unsplash.com/200x60/?startup,logo" alt="logo1" class="h-8 w-auto object-contain grayscale">
+        <img src="https://source.unsplash.com/200x60/?shop,brand" alt="logo2" class="h-8 w-auto object-contain grayscale">
+        <img src="https://source.unsplash.com/200x60/?retail,brand" alt="logo3" class="h-8 w-auto object-contain grayscale">
+        <img src="https://source.unsplash.com/200x60/?fulfillment,brand" alt="logo4" class="h-8 w-auto object-contain grayscale">
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="mt-24">
+    <div class="mx-auto max-w-7xl px-6">
+      <div class="max-w-2xl">
+        <h2 class="text-3xl font-bold text-slate-900">功能亮點</h2>
+        <p class="mt-3 text-slate-600">幫助商店減少客服工時與損失，同時讓顧客更滿意。</p>
+      </div>
+      <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <!-- Feature 1 -->
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <div class="flex items-center gap-3">
+            <span class="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600 text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path stroke-width="1.6" d="M12 3v18m9-9H3"/>
+              </svg>
+            </span>
+            <h3 class="text-lg font-semibold text-slate-900">自助訂單編輯</h3>
+          </div>
+          <p class="mt-3 text-slate-600">顧客可在出貨前自行修改地址、變更款式/尺寸、調整數量；商家可設定可編輯欄位與截止時間。</p>
+          <img src="https://source.unsplash.com/600x380/?dashboard,ui" alt="self-serve editing" class="mt-4 w-full rounded-lg ring-1 ring-slate-200">
+        </div>
+        <!-- Feature 2 -->
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <div class="flex items-center gap-3">
+            <span class="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-emerald-600 text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path stroke-width="1.6" d="M4 4h16v6H4zM4 14h8v6H4zM14 14h6v6h-6z"/>
+              </svg>
+            </span>
+            <h3 class="text-lg font-semibold text-slate-900">無縫安裝 · 30 秒上線</h3>
+          </div>
+          <p class="mt-3 text-slate-600">支援主流電商平台與自架站，一行程式碼嵌入；無需工程資源即可啟用。</p>
+          <img src="https://source.unsplash.com/600x380/?code,embed" alt="easy install" class="mt-4 w-full rounded-lg ring-1 ring-slate-200">
+        </div>
+        <!-- Feature 3 -->
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <div class="flex items-center gap-3">
+            <span class="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-amber-600 text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path stroke-width="1.6" d="M3 12h18M3 6h18M3 18h10"/>
+              </svg>
+            </span>
+            <h3 class="text-lg font-semibold text-slate-900">降低客服與退款成本</h3>
+          </div>
+          <p class="mt-3 text-slate-600">顧客不再「取消重下單」。預設審批流程與風控，顯著減少工單與錯誤訂單導致的損失。</p>
+          <img src="https://source.unsplash.com/600x380/?customer,service" alt="reduce tickets" class="mt-4 w-full rounded-lg ring-1 ring-slate-200">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section id="cta" class="mt-28">
+    <div class="mx-auto max-w-7xl px-6">
+      <div class="relative overflow-hidden rounded-3xl bg-slate-900">
+        <div class="absolute inset-0 -z-0 opacity-30">
+          <img src="https://source.unsplash.com/1600x800/?warehouse,shipping" alt="bg" class="h-full w-full object-cover">
+        </div>
+        <div class="relative grid lg:grid-cols-2 gap-10 p-8 sm:p-12">
+          <div class="text-white">
+            <h3 class="text-3xl font-bold">把「取消重下單」從待辦清單刪掉</h3>
+            <p class="mt-3 text-slate-200">加入等候名單，搶先取得 Beta 邀請與專屬上線協助。</p>
+            <ul class="mt-6 space-y-2 text-sm text-slate-200">
+              <li class="inline-flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-emerald-400"></span> 30 秒安裝、一行程式碼</li>
+              <li class="inline-flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-emerald-400"></span> 可設定可編輯欄位與截止時間</li>
+              <li class="inline-flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-emerald-400"></span> 風控與審批，保障營運安全</li>
+            </ul>
+          </div>
+          <div id="signup" class="bg-white/90 backdrop-blur rounded-2xl p-6 sm:p-8 shadow-lg ring-1 ring-white/40">
+            <h4 class="text-xl font-semibold text-slate-900">加入等待名單</h4>
+            <p class="mt-1 text-sm text-slate-600">留下 Email，我們會在開放時通知您。</p>
+            <form action="https://hook.us2.make.com/5z0gf5jwihdjvk59wcidkxxtroh52jm1" method="POST" class="mt-6">
+                <input type="hidden" name="idea_name" value="# 🚀 Project OrderEase
+
+> The Hook (一句話鉤子)：
+> Self‑serve order editing for SMB e‑commerce — install in 30 seconds, slash CX tickets from “cancel & reorder”">
+                <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2">您的 Email</label>
+                    <input type="email" name="email" required class="w-full rounded-lg border border-slate-300 px-4 py-3 text-slate-900 placeholder-slate-400 shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:border-indigo-600" placeholder="name@example.com">
+                </div>
+                <button type="submit" class="inline-flex w-full items-center justify-center rounded-lg bg-indigo-600 px-5 py-3 text-white font-medium shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-offset-2">
+                  我有興趣 (加入等待名單)
+                </button>
+            </form>
+            <p class="mt-3 text-xs text-slate-500">我們只會寄送產品更新與邀請，絕不販售您的資料。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="mt-16 border-t border-slate-200">
+    <div class="mx-auto max-w-7xl px-6 py-10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+      <p class="text-sm text-slate-500">© <span id="year"></span> OrderEase. All rights reserved.</p>
+      <div class="flex items-center gap-4 text-sm">
+        <a href="#" class="text-slate-500 hover:text-slate-800">隱私權政策</a>
+        <a href="#" class="text-slate-500 hover:text-slate-800">服務條款</a>
+        <a href="#signup" class="inline-flex items-center rounded-md border border-slate-300 px-3 py-1.5 text-slate-700 hover:bg-slate-50">加入等待名單</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Set current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
