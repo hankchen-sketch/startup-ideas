@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Project Memoro Nexus — 讓學習成為你的超能力</title>
+  <meta name="description" content="Readwise + Anki，一站整合：匯入任何內容、AI 萃取重點、用科學方法記住。免費加入等候名單。" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['Playfair Display', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-amber-50 text-gray-900 font-sans antialiased">
+  <!-- Top Bar -->
+  <header class="bg-amber-50/60 backdrop-blur-sm sticky top-0 z-40 border-b border-amber-100">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#home" class="font-serif text-xl md:text-2xl text-gray-900">Memoro Nexus</a>
+      <nav class="hidden md:flex items-center gap-6 text-sm text-gray-700">
+        <a href="#problem" class="hover:text-orange-600 transition">痛點</a>
+        <a href="#features" class="hover:text-orange-600 transition">功能亮點</a>
+        <a href="#how" class="hover:text-orange-600 transition">使用步驟</a>
+        <a href="#signup" class="px-4 py-2 rounded-lg bg-stone-800 text-amber-50 hover:scale-[1.02] transition">加入等候名單</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="bg-amber-50">
+    <div class="max-w-5xl mx-auto px-6 text-center py-24 md:py-32 lg:py-40">
+      <h1 class="font-serif font-bold text-5xl md:text-6xl lg:text-7xl leading-tight text-gray-900">
+        把學習變成你的超能力
+      </h1>
+      <div class="mt-6 md:mt-8">
+        <p class="text-lg md:text-xl lg:text-2xl text-gray-900 leading-relaxed">
+          PDF、影片、網頁東一塊西一塊，你總是抓不到重點。
+        </p>
+        <p class="text-lg md:text-xl lg:text-2xl text-gray-600 leading-relaxed mt-1">
+          匯入任何內容，AI 幫你濃縮精華，再做成會記住的卡片。
+        </p>
+      </div>
+      <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="#signup" class="inline-flex items-center justify-center px-8 py-4 rounded-xl bg-stone-800 text-white font-semibold hover:scale-105 transition">
+          免費開始使用
+        </a>
+        <a href="#how" class="inline-flex items-center justify-center px-8 py-4 rounded-xl bg-amber-100 text-gray-900 font-semibold hover:scale-105 transition">
+          看看怎麼運作
+        </a>
+      </div>
+      <p class="mt-6 text-sm text-gray-500">
+        ✓ 完全免費  ✓ 無需信用卡  ✓ 2 分鐘快速設定
+      </p>
+      <p class="mt-3 text-xs text-gray-500">
+        Readwise + Anki，端到端學習體驗：Import anything, get key takeaways, remember for good.
+      </p>
+    </div>
+  </section>
+
+  <!-- Problem Section -->
+  <section id="problem" class="bg-stone-100/50">
+    <div class="max-w-6xl mx-auto px-6 py-20 md:py-28">
+      <div class="text-center mb-12">
+        <h2 class="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">
+          為什麼你需要它？
+        </h2>
+        <p class="mt-2 text-gray-600 text-lg">
+          因為這些問題每天都在發生
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+        <!-- Pain card 1 -->
+        <div class="rounded-xl bg-amber-50/60 p-6">
+          <div class="w-12 h-12 rounded-full bg-orange-100 text-orange-600 flex items-center justify-center text-xl mb-4">💡</div>
+          <h3 class="font-serif font-semibold text-xl mb-2">靈感來了就忘了</h3>
+          <p class="text-gray-600 leading-relaxed">
+            開會或通勤時突然想到好點子，回到座位卻只剩模糊印象。
+          </p>
+          <p class="text-gray-600 leading-relaxed mt-1">
+            需要用時，腦中一片空白，只能懊惱「剛剛明明想到過」。
+          </p>
+        </div>
+        <!-- Pain card 2 -->
+        <div class="rounded-xl bg-amber-50/60 p-6">
+          <div class="w-12 h-12 rounded-full bg-orange-100 text-orange-600 flex items-center justify-center text-xl mb-4">📄</div>
+          <h3 class="font-serif font-semibold text-xl mb-2">長文看不完，重點抓不住</h3>
+          <p class="text-gray-600 leading-relaxed">
+            報告、研究、部落格一篇接一篇，花了半天還是沒抓到精華。
+          </p>
+          <p class="text-gray-600 leading-relaxed mt-1">
+            臨時要簡報，卻只記得片段，講不出重點。
+          </p>
+        </div>
+        <!-- Pain card 3 -->
+        <div class="rounded-xl bg-amber-50/60 p-6">
+          <div class="w-12 h-12 rounded-full bg-orange-100 text-orange-600 flex items-center justify-center text-xl mb-4">🗂️</div>
+          <h3 class="font-serif font-semibold text-xl mb-2">筆記散落各處，復習沒系統</h3>
+          <p class="text-gray-600 leading-relaxed">
+            PDF 在桌面、影片在 YouTube、重點在不同筆記軟體。
+          </p>
+          <p class="text-gray-600 leading-relaxed mt-1">
+            真要複習時，找檔案比學習還花時間。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Transition -->
+  <section class="py-8">
+    <p class="text-center text-2xl text-gray-600 font-serif italic">
+      現在，這一切都能輕鬆解決
+    </p>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="bg-amber-50">
+    <div class="max-w-6xl mx-auto px-6 py-20 md:py-28">
+      <div class="text-center mb-12">
+        <h2 class="font-serif text-3xl md:text-4xl lg:text-5xl font-bold">為你而生的四個關鍵能力</h2>
+        <p class="mt-3 text-gray-600 text-lg">少花時間，得到更多理解，並且真的記住</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+        <!-- Feature 1 -->
+        <div class="rounded-xl bg-amber-50/70 p-6 hover:-translate-y-1 transition transform">
+          <div class="w-12 h-12 rounded-full bg-orange-100 text-orange-600 flex items-center justify-center text-xl mb-4">🎯</div>
+          <h3 class="font-serif font-semibold text-xl mb-2">秒懂重點</h3>
+          <p class="text-gray-600 leading-relaxed">
+            再長的文章、報告，3 秒看懂核心。先看到你需要知道的。
+          </p>
+          <p class="text-gray-600 leading-relaxed mt-1">
+            開會前快速掃一遍，回覆訊息、寫簡報更有底氣。
+          </p>
+        </div>
+        <!-- Feature 2 -->
+        <div class="rounded-xl bg-amber-50/70 p-6 hover:-translate-y-1 transition transform">
+          <div class="w-12 h-12 rounded-full bg-orange-100 text-orange-600 flex items-center justify-center text-xl mb-4">🧠</div>
+          <h3 class="font-serif font-semibold text-xl mb-2">一鍵變成記憶卡</h3>
+          <p class="text-gray-600 leading-relaxed">
+            重點自動變成簡潔問答卡，幫你複習剛剛讀過的概念。
+          </p>
+          <p class="text-gray-600 leading-relaxed mt-1">
+            學語言、準備考試、讀書做筆記，都能立刻開始記住。
+          </p>
+        </div>
+        <!-- Feature 3 -->
+        <div class="rounded-xl bg-amber-50/70 p-6 hover:-translate-y-1 transition transform">
+          <div class="w-12 h-12 rounded-full bg-orange-100 text-orange-600 flex items-center justify-center text-xl mb-4">📥</div>
+          <h3 class="font-serif font-semibold text-xl mb-2">輕鬆匯入任何內容</h3>
+          <p class="text-gray-600 leading-relaxed">
+            直接貼上連結、上傳 PDF、輸入文字，來源不受限。
+          </p>
+          <p class="text-gray-600 leading-relaxed mt-1">
+            文章、影片、講義一次收好，不再四處找資料。
+          </p>
+        </div>
+        <!-- Feature 4 -->
+        <div class="rounded-xl bg-amber-50/70 p-6 hover:-translate-y-1 transition transform">
+          <div class="w-12 h-12 rounded-full bg-orange-100 text-orange-600 flex items-center justify-center text-xl mb-4">⏰</div>
+          <h3 class="font-serif font-semibold text-xl mb-2">持續提醒，不再遺忘</h3>
+          <p class="text-gray-600 leading-relaxed">
+            依照你的步調安排複習節奏，剛剛好在忘記前複習。
+          </p>
+          <p class="text-gray-600 leading-relaxed mt-1">
+            用手機的碎片時間複習，每天 10 分鐘就有進步。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section id="how" class="bg-stone-100/50">
+    <div class="max-w-6xl mx-auto px-6 py-20 md:py-28">
+      <div class="text-center mb-12">
+        <h2 class="font-serif text-3xl md:text-4xl lg:text-5xl font-bold">三步驟，立即開始</h2>
+        <p class="mt-3 text-gray-600 text-lg">簡單到不需要說明書</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 items-start gap-8 md:gap-6">
+        <!-- Step 1 -->
+        <div class="text-center">
+          <div class="mx-auto w-14 h-14 rounded-full bg-orange-500 text-white flex items-center justify-center text-2xl font-bold">1</div>
+          <h3 class="font-serif font-semibold text-xl mt-4">匯入內容</h3>
+          <p class="text-gray-600 leading-relaxed mt-2">貼上連結、上傳檔案，或直接貼文字。10 秒完成。</p>
+        </div>
+
+        <!-- Arrow -->
+        <div class="hidden md:flex items-center justify-center text-3xl text-gray-400">→</div>
+
+        <!-- Step 2 -->
+        <div class="text-center">
+          <div class="mx-auto w-14 h-14 rounded-full bg-orange-500 text-white flex items-center justify-center text-2xl font-bold">2</div>
+          <h3 class="font-serif font-semibold text-xl mt-4">取得重點</h3>
+          <p class="text-gray-600 leading-relaxed mt-2">AI 濃縮最有用的段落、觀念與例子，秒懂不費力。</p>
+        </div>
+
+        <!-- Arrow -->
+        <div class="hidden md:flex items-center justify-center text-3xl text-gray-400">→</div>
+
+        <!-- Step 3 -->
+        <div class="text-center">
+          <div class="mx-auto w-14 h-14 rounded-full bg-orange-500 text-white flex items-center justify-center text-2xl font-bold">3</div>
+          <h3 class="font-serif font-semibold text-xl mt-4">開始記住</h3>
+          <p class="text-gray-600 leading-relaxed mt-2">自動生成卡片並安排複習，邊走邊學也能穩定進步。</p>
+        </div>
+      </div>
+
+      <p class="mt-10 text-lg text-gray-600 text-center">就是這麼簡單！現在就開始吧 👇</p>
+    </div>
+  </section>
+
+  <!-- Social Proof -->
+  <section class="bg-amber-50">
+    <div class="max-w-4xl mx-auto px-6 py-12 text-center">
+      <p class="text-gray-600">⭐⭐⭐⭐⭐ 已有 2,000+ 位好學的你搶先體驗</p>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section id="signup" class="bg-stone-800">
+    <div class="max-w-4xl mx-auto px-6 py-24 md:py-32 text-center">
+      <h2 class="font-serif text-4xl md:text-5xl font-bold text-amber-50">
+        成為首批體驗者
+      </h2>
+      <p class="mt-4 text-amber-200">
+        提早加入，獲得終身免費升級資格 🎁 無需信用卡，隨時可取消
+      </p>
+
+      <form action="https://hook.us2.make.com/5z0gf5jwihdjvk59wcidkxxtroh52jm1" method="POST" class="max-w-md mx-auto mt-8">
+        <input type="hidden" name="idea_name" value="# 🚀 Project Memoro Nexus
+
+&gt; The Hook (一句話鉤子)：
+&gt; Readwise + Anki, end-to-end for everything you study — import anything, get key takeaways, remember for good.
+
+## 1. The Real Problem (真實痛點)
+- &quot;Studying is painful…&quot; 反覆提到在 PDF，影片，網頁分散的疑惑，筆記卻記不住重點，復習沒有系統。
+
+..">
+        <div class="mb-4">
+          <input 
+            type="email" 
+            name="email" 
+            required 
+            class="w-full px-6 py-4 text-lg border-2 border-amber-200 bg-white/10 text-white placeholder-amber-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 transition backdrop-blur-sm" 
+            placeholder="輸入你的 Email">
+        </div>
+        <button 
+          type="submit" 
+          class="w-full bg-orange-500 text-white font-bold text-lg py-4 px-8 rounded-lg hover:bg-orange-600 transition duration-300 transform hover:scale-105">
+          立即加入等候名單 →
+        </button>
+      </form>
+
+      <p class="text-sm text-amber-300 text-center mt-4">
+        ✓ 我們重視隱私，絕不外洩你的資料  ✓ 隨時可取消訂閱
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-amber-50">
+    <div class="max-w-6xl mx-auto px-6 py-8 text-center">
+      <p class="text-gray-500 text-sm">© 2025 Memoro Nexus. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
