@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OrderFlex Landing Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['Playfair Display', 'serif']
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-[#F6FAFB] text-[#1A1A1A]">
+
+  <!-- Hero Section -->
+  <section class="bg-[#F6FAFB] py-24 md:py-32 lg:py-40">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h1 class="text-[#1A1A1A] font-serif text-5xl md:text-6xl lg:text-7xl font-bold mb-6">
+        你立即自助改單
+      </h1>
+      <p class="text-[#4A5F68] text-lg md:text-xl lg:text-2xl mb-2">
+        你是否為改訂單忙到翻天？
+      </p>
+      <p class="text-[#6B7F88] text-lg md:text-xl lg:text-2xl mb-8">
+        自助改顏色/尺寸/數量，一鍵完成，省時省力
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-4">
+        <button class="bg-[#3B9DB5] text-white hover:bg-[#2E8BA3] py-4 px-8 rounded-lg font-semibold transition duration-300">
+          免費開始使用
+        </button>
+        <button class="bg-[#EEF5F7] text-[#2C3E45] hover:bg-[#E3EDF0] py-4 px-8 rounded-lg font-semibold transition duration-300">
+          了解更多
+        </button>
+      </div>
+      <p class="text-sm text-[#6B7F88]">
+        ✓ 完全免費  ✓ 無需信用卡  ✓ 2 分鐘快速設定
+      </p>
+    </div>
+  </section>
+
+  <!-- Problem Section -->
+  <section class="bg-[#E3EDF0] py-20 md:py-28">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-[#1A1A1A] font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-4">
+        為什麼你需要它？
+      </h2>
+      <p class="text-[#4A5F68] text-xl text-center mb-12">
+        因為這些問題每天都在發生
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-[#EEF5F7] p-8 rounded-xl">
+          <div class="bg-[#E8F5F8] w-20 h-20 rounded-2xl flex items-center justify-center mb-6">
+            <span class="text-5xl">💡</span>
+          </div>
+          <h3 class="text-[#1A1A1A] font-serif font-semibold text-xl mb-3">
+            客服工單爆發
+          </h3>
+          <p class="text-[#4A5F68] text-base leading-relaxed">
+            每天數百條客戶訊息，客服人員忙翻天，效率低下。
+          </p>
+        </div>
+        <div class="bg-[#EEF5F7] p-8 rounded-xl">
+          <div class="bg-[#E8F5F8] w-20 h-20 rounded-2xl flex items-center justify-center mb-6">
+            <span class="text-5xl">⚠️</span>
+          </div>
+          <h3 class="text-[#1A1A1A] font-serif font-semibold text-xl mb-3">
+            訂單管理混亂
+          </h3>
+          <p class="text-[#4A5F68] text-base leading-relaxed">
+            手動修改易出錯，退款退貨率飆升，客訴不斷。
+          </p>
+        </div>
+        <div class="bg-[#EEF5F7] p-8 rounded-xl">
+          <div class="bg-[#E8F5F8] w-20 h-20 rounded-2xl flex items-center justify-center mb-6">
+            <span class="text-5xl">🔗</span>
+          </div>
+          <h3 class="text-[#1A1A1A] font-serif font-semibold text-xl mb-3">
+            平台差異複雜
+          </h3>
+          <p class="text-[#4A5F68] text-base leading-relaxed">
+            Shopify、WooCommerce 各種 API 差異大，整合耗時耗力。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Transition -->
+  <section class="bg-[#F6FAFB] py-8 md:py-12">
+    <p class="text-2xl md:text-3xl text-[#4A5F68] font-serif italic text-center">
+      現在，一切都能輕鬆搞定
+    </p>
+  </section>
+
+  <!-- Features Section -->
+  <section class="bg-[#F6FAFB] py-20 md:py-28">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-[#1A1A1A] font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-12">
+        核心功能一覽
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-[#EEF5F7] p-8 rounded-xl hover:transform hover:-translate-y-1 transition duration-300">
+          <div class="bg-[#E8F5F8] w-20 h-20 rounded-full flex items-center justify-center mb-6">
+            <span class="text-5xl">🎯</span>
+          </div>
+          <h3 class="text-[#1A1A1A] font-serif font-semibold text-2xl mb-3">
+            即時自助編輯
+          </h3>
+          <p class="text-[#4A5F68] text-base leading-relaxed">
+            買家前端自助修改訂單，客服互動一次解決。
+          </p>
+        </div>
+        <div class="bg-[#EEF5F7] p-8 rounded-xl hover:transform hover:-translate-y-1 transition duration-300">
+          <div class="bg-[#E8F5F8] w-20 h-20 rounded-full flex items-center justify-center mb-6">
+            <span class="text-5xl">🛠️</span>
+          </div>
+          <h3 class="text-[#1A1A1A] font-serif font-semibold text-2xl mb-3">
+            跨平台規則引擎
+          </h3>
+          <p class="text-[#4A5F68] text-base leading-relaxed">
+            統一管理 Shopify/WooCommerce/BigCommerce 規則。
+          </p>
+        </div>
+        <div class="bg-[#EEF5F7] p-8 rounded-xl hover:transform hover:-translate-y-1 transition duration-300">
+          <div class="bg-[#E8F5F8] w-20 h-20 rounded-full flex items-center justify-center mb-6">
+            <span class="text-5xl">🔄</span>
+          </div>
+          <h3 class="text-[#1A1A1A] font-serif font-semibold text-2xl mb-3">
+            雙路徑數據提交
+          </h3>
+          <p class="text-[#4A5F68] text-base leading-relaxed">
+            API 優先與自動備援，確保資料完整無遺。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="bg-[#E3EDF0] py-20 md:py-28">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-[#1A1A1A] font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-12">
+        三步驟，立即開始
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div class="text-center">
+          <div class="bg-[#3B9DB5] text-white text-3xl font-bold w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
+            1
+          </div>
+          <h3 class="text-[#1A1A1A] font-serif font-semibold text-xl mb-3">
+            安裝插件
+          </h3>
+          <p class="text-[#4A5F68] text-base">
+            只需 2 分鐘安裝至你的店鋪。
+          </p>
+        </div>
+        <div class="text-center">
+          <div class="bg-[#3B9DB5] text-white text-3xl font-bold w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
+            2
+          </div>
+          <h3 class="text-[#1A1A1A] font-serif font-semibold text-xl mb-3">
+            設定規則
+          </h3>
+          <p class="text-[#4A5F68] text-base">
+            自訂修改條件與時效管理。
+          </p>
+        </div>
+        <div class="text-center">
+          <div class="bg-[#3B9DB5] text-white text-3xl font-bold w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
+            3
+          </div>
+          <h3 class="text-[#1A1A1A] font-serif font-semibold text-xl mb-3">
+            啟用服務
+          </h3>
+          <p class="text-[#4A5F68] text-base">
+            買家即可前端自助改單。
+          </p>
+        </div>
+      </div>
+      <p class="text-lg text-[#4A5F68] text-center mt-12">
+        就是這麼簡單！現在就開始吧 👇
+      </p>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="bg-[#2C3E45] py-24 md:py-32">
+    <div class="max-w-2xl mx-auto px-6">
+      <h2 class="text-[#F6FAFB] font-serif text-4xl md:text-5xl font-bold text-center mb-4">
+        成為首批體驗者
+      </h2>
+      <p class="text-[#E3EDF0] text-xl text-center mb-8">
+        提早加入，獲得專屬優惠 🎁
+      </p>
+      <form action="https://hook.us2.make.com/5z0gf5jwihdjvk59wcidkxxtroh52jm1" method="POST" class="max-w-md mx-auto">
+        <input type="hidden" name="idea_name" value='{"text":"🔥 Project OrderFlex – 60 分鐘內免補價差，買家自己改單真輕鬆！\n\n😤 誰在崩潰？  \n> “我們每天都在客服聊天裡處理改訂單，真的人力爆表！”\n\n🛠️ 我們的切入點  \nMVP：Shopify/WooCommerce 服飾品類，買家可在 60 分鐘內前端自助改顏色/尺寸、數量、地址（同國家、無價差），後端規則引擎控管時效、庫存、審核。  \n技術亮點：跨平台 Order Edit 抽象層 + Dual-Path Commit（API 優先 + 自動化複製 fallback），保證一致體驗＆完整審計。\n\n🥊 競品雷達 (Competitor Watch)  \n* WebToffee：https://www.webtoffee.com/product/order-import-export-plugin-for-woocommerce/  \n  優勢：後端批量匯入／匯出  \n  我們差異：前端自助＋即時單筆＋規則審核，一次解決客服爆量痛點  \n* SelfServe：https://apps.shopify.com/selfserve  \n  優勢：Shopify 自助編輯 App  \n  我們差異：深度整合＋跨 Shopify/WooCommerce/BigCommerce 統一規則引擎  \n\n🔗 Reddit貼文連結  \nhttps://www.reddit.com/r/SomebodyMakeThis/comments/1oz4soi/an_ecommerce_platform_like_shopify_or_woocommerce/\n\n---  \n🤔 團隊腦力激盪：  \n「在多平台 API 差異巨大、規則與用戶體驗常衝突的情況下，大家覺得最有效的技術策略是什麼？」  \n\n👉 點此生成 Landing Page（點擊後請稍等，系統將傳送提案網址）  \nhttps://hook.us2.make.com/hfmjy4qf4rvs2drx6fgdsyw3h61x0bx6?idea_summary=%23%20%F0%9F%9A%80%20Project%20OrderFlex%0A%0A%3E%20The%20Hook%20(%E4%B8%80%E5%8F%A5%E8%A9%B1%E9%89%A4%E5%AD%90)%3A%0A%3E%20Self%E2%80%91serve%20order%20edits%20for%20Shopify%2FWooCommerce%20%E2%80%94%20a%20rules-driven%20front-end%20%2B%20back-office%20workflow%20that%20cuts%20support%20tickets%2C%20not%20corners."'>
+        <div class="mb-4">
+          <input 
+            type="email" 
+            name="email" 
+            required 
+            class="w-full px-6 py-4 text-lg border-2 border-[#E3EDF0] bg-white/10 text-white placeholder-[#6B7F88] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#3B9DB5] transition backdrop-blur-sm" 
+            placeholder="輸入你的 Email">
+        </div>
+        <button 
+          type="submit" 
+          class="w-full bg-[#3B9DB5] text-white font-bold text-lg py-4 px-8 rounded-lg hover:bg-[#2E8BA3] transition duration-300 transform hover:scale-105">
+          立即加入等候名單 →
+        </button>
+      </form>
+      <p class="text-sm text-[#6B7F88] text-center mt-4">
+        ✓ 我們重視隱私，絕不外洩你的資料  ✓ 隨時可取消訂閱
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#F6FAFB] py-8">
+    <p class="text-[#6B7F88] text-sm text-center">
+      © 2024 版權聲明
+    </p>
+  </footer>
+
+</body>
+</html>
