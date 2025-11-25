@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dreamake — 讓你的靈感不再溜走</title>
+  <meta name="description" content="Dreamake 幫你把零散靈感與重點自動整理、濃縮成可執行步驟。免費搶先體驗，無需信用卡，2 分鐘完成設定。">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['Playfair Display', 'serif'],
+          },
+          colors: {
+            'warm-bg': '#FAF8F3',
+            'warm-card': '#F5F0E8',
+            'warm-contrast': '#EDE7DC',
+            'brand-orange': '#EA6A47',
+            'brand-orange-light': '#F59E7B',
+            'icon-bg': '#FFF4ED',
+            'warm-dark': '#3D2E28',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-[#FAF8F3] antialiased">
+  <!-- Hero -->
+  <section id="hero" class="bg-[#FAF8F3] py-24 md:py-32 lg:py-40">
+    <div class="max-w-5xl mx-auto px-6">
+      <h1 class="text-[#1A1A1A] font-serif text-5xl md:text-6xl lg:text-7xl font-bold text-center">
+        讓你的靈感不再溜走
+      </h1>
+      <p class="text-[#6B5D52] text-lg md:text-xl lg:text-2xl text-center mt-6">
+        重要的重點總在最需要時想不起來
+      </p>
+      <p class="text-[#8B7E74] text-lg md:text-xl lg:text-2xl text-center">
+        讓 AI 幫你捕捉、整理，變成今天就能行動的清單
+      </p>
+      <div class="flex gap-4 justify-center mt-10">
+        <a href="#cta" class="bg-[#EA6A47] text-white hover:bg-[#D95A3A] py-4 px-8 rounded-lg font-semibold">
+          免費開始使用
+        </a>
+        <a href="#how" class="bg-[#F5F0E8] text-[#3D2E28] hover:bg-[#EDE7DC] py-4 px-8 rounded-lg font-semibold">
+          看看怎麼運作
+        </a>
+      </div>
+      <p class="text-sm text-[#8B7E74] text-center mt-4">
+        ✓ 完全免費  ✓ 無需信用卡  ✓ 2 分鐘快速設定
+      </p>
+    </div>
+  </section>
+
+  <!-- Problem -->
+  <section id="problem" class="bg-[#EDE7DC] py-20 md:py-28">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-[#1A1A1A] font-serif text-3xl md:text-4xl lg:text-5xl font-bold">
+          你是否也有這些日常困擾？
+        </h2>
+        <p class="text-[#6B5D52] text-lg md:text-xl mt-3">
+          因為這些問題每天都在發生
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Card 1 -->
+        <div class="bg-[#F5F0E8] p-8 rounded-xl">
+          <div class="bg-[#FFF4ED] w-20 h-20 rounded-2xl flex items-center justify-center mb-6">
+            <span class="text-5xl text-[#EA6A47]">💡</span>
+          </div>
+          <h3 class="text-[#1A1A1A] font-serif font-semibold text-xl mb-3">靈感稍縱即逝</h3>
+          <p class="text-[#6B5D52] text-base leading-relaxed">
+            開會或通勤時突然想到好點子，回到桌前卻怎麼也想不起來。想做時，已經忘了關鍵細節。
+          </p>
+        </div>
+        <!-- Card 2 -->
+        <div class="bg-[#F5F0E8] p-8 rounded-xl">
+          <div class="bg-[#FFF4ED] w-20 h-20 rounded-2xl flex items-center justify-center mb-6">
+            <span class="text-5xl text-[#EA6A47]">🗂️</span>
+          </div>
+          <h3 class="text-[#1A1A1A] font-serif font-semibold text-xl mb-3">資料到處都是</h3>
+          <p class="text-[#6B5D52] text-base leading-relaxed">
+            重點散落在備忘錄、雲端、聊天紀錄裡。要交付時才發現找不到，重做一次又浪費時間。
+          </p>
+        </div>
+        <!-- Card 3 -->
+        <div class="bg-[#F5F0E8] p-8 rounded-xl">
+          <div class="bg-[#FFF4ED] w-20 h-20 rounded-2xl flex items-center justify-center mb-6">
+            <span class="text-5xl text-[#EA6A47]">⏱️</span>
+          </div>
+          <h3 class="text-[#1A1A1A] font-serif font-semibold text-xl mb-3">長文太多看不完</h3>
+          <p class="text-[#6B5D52] text-base leading-relaxed">
+            報告厚厚一疊，時間只剩 5 分鐘。最後硬著頭皮亂翻，仍抓不到重點。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solution Transition -->
+  <section class="bg-[#FAF8F3] py-8 md:py-12">
+    <p class="text-2xl md:text-3xl text-[#6B5D52] font-serif italic text-center">
+      現在，這一切都能輕鬆解決
+    </p>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="bg-[#FAF8F3] py-20 md:py-28">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-[#1A1A1A] font-serif text-3xl md:text-4xl lg:text-5xl font-bold">
+          三大核心功能，讓工作更輕鬆
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Feature 1 -->
+        <div class="bg-[#F5F0E8] p-8 rounded-xl hover:transform hover:-translate-y-1 transition">
+          <div class="bg-[#FFF4ED] w-20 h-20 rounded-full flex items-center justify-center mb-6">
+            <span class="text-5xl text-[#EA6A47]">🎯</span>
+          </div>
+          <h3 class="text-[#1A1A1A] font-serif font-semibold text-2xl mb-3">一眼抓住重點</h3>
+          <p class="text-[#6B5D52] text-base leading-relaxed">
+            再長的文章也能在幾秒內看懂重點。會前快速掃描資料，對答更有條理。
+          </p>
+        </div>
+        <!-- Feature 2 -->
+        <div class="bg-[#F5F0E8] p-8 rounded-xl hover:transform hover:-translate-y-1 transition">
+          <div class="bg-[#FFF4ED] w-20 h-20 rounded-full flex items-center justify-center mb-6">
+            <span class="text-5xl text-[#EA6A47]">🗃️</span>
+          </div>
+          <h3 class="text-[#1A1A1A] font-serif font-semibold text-2xl mb-3">自動整理你的想法</h3>
+          <p class="text-[#6B5D52] text-base leading-relaxed">
+            零散筆記自動歸檔成主題與標籤。下次需要時，搜尋一下就找到。
+          </p>
+        </div>
+        <!-- Feature 3 -->
+        <div class="bg-[#F5F0E8] p-8 rounded-xl hover:transform hover:-translate-y-1 transition">
+          <div class="bg-[#FFF4ED] w-20 h-20 rounded-full flex items-center justify-center mb-6">
+            <span class="text-5xl text-[#EA6A47]">✅</span>
+          </div>
+          <h3 class="text-[#1A1A1A] font-serif font-semibold text-2xl mb-3">把靈感變成行動</h3>
+          <p class="text-[#6B5D52] text-base leading-relaxed">
+            輸入一句靈感，立即生成下一步與待辦清單。今天就能開始做，不再拖延。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section id="how" class="bg-[#EDE7DC] py-20 md:py-28">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-[#1A1A1A] font-serif text-3xl md:text-4xl lg:text-5xl font-bold">
+          三步驟，立即開始
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <!-- Step 1 -->
+        <div class="text-center">
+          <div class="bg-[#EA6A47] text-white text-3xl font-bold w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
+            1
+          </div>
+          <h3 class="text-[#1A1A1A] font-serif font-semibold text-xl mb-3">匯入內容</h3>
+          <p class="text-[#6B5D52] text-base">
+            貼上文字、上傳檔案，或連結你的筆記工具。只要 10 秒。
+          </p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="text-center">
+          <div class="bg-[#EA6A47] text-white text-3xl font-bold w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
+            2
+          </div>
+          <h3 class="text-[#1A1A1A] font-serif font-semibold text-xl mb-3">取得重點</h3>
+          <p class="text-[#6B5D52] text-base">
+            AI 濃縮重點與脈絡，幫你把雜訊變清晰，秒懂該看什麼。
+          </p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="text-center">
+          <div class="bg-[#EA6A47] text-white text-3xl font-bold w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
+            3
+          </div>
+          <h3 class="text-[#1A1A1A] font-serif font-semibold text-xl mb-3">一鍵實作</h3>
+          <p class="text-[#6B5D52] text-base">
+            轉成行動清單或筆記模板，排好優先順序，立刻開始。
+          </p>
+        </div>
+      </div>
+
+      <!-- Arrows for desktop -->
+      <div class="hidden md:flex items-center justify-center gap-8 mt-6 text-2xl text-[#6B5D52]">
+        <span>1</span><span>→</span><span>2</span><span>→</span><span>3</span>
+      </div>
+
+      <p class="text-lg text-[#6B5D52] text-center mt-12">
+        就是這麼簡單！現在就開始吧 👇
+      </p>
+    </div>
+  </section>
+
+  <!-- Social Proof -->
+  <section class="bg-[#FAF8F3] py-12">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <p class="text-[#6B5D52] text-lg">
+        ⭐⭐⭐⭐⭐  已有 2,000+ 位創作者、學生與知識工作者搶先體驗
+      </p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="cta" class="bg-[#3D2E28] py-24 md:py-32">
+    <div class="max-w-3xl mx-auto px-6">
+      <h2 class="text-[#FAF8F3] font-serif text-4xl md:text-5xl font-bold text-center">
+        成為首批體驗者
+      </h2>
+      <p class="text-[#E5D4C8] text-xl text-center mt-4">
+        提早加入，獲得終身免費升級資格 🎁
+      </p>
+
+      <form action="https://hook.us2.make.com/5z0gf5jwihdjvk59wcidkxxtroh52jm1" method="POST" class="max-w-md mx-auto mt-8">
+          <input type="hidden" name="idea_name" value="❖一、市場面
+1. 市場定位
+Dreamake 的市場定位：
+.">
+          <div class="mb-4">
+              <input 
+                  type="email" 
+                  name="email" 
+                  required 
+                  class="w-full px-6 py-4 text-lg border-2 border-[#E5D4C8] bg-white/10 text-white placeholder-[#B8A89C] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#EA6A47] transition backdrop-blur-sm" 
+                  placeholder="輸入你的 Email">
+          </div>
+          <button 
+              type="submit" 
+              class="w-full bg-[#EA6A47] text-white font-bold text-lg py-4 px-8 rounded-lg hover:bg-[#F59E7B] transition duration-300 transform hover:scale-105">
+              立即加入等候名單 →
+          </button>
+      </form>
+
+      <p class="text-sm text-[#B8A89C] text-center mt-4">
+        ✓ 我們重視隱私，絕不外洩你的資料  ✓ 隨時可取消訂閱
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#FAF8F3] py-8">
+    <p class="text-[#8B7E74] text-sm text-center">
+      © 2025 Dreamake — 讓你的想法被好好對待。版權所有。
+    </p>
+  </footer>
+</body>
+</html>
