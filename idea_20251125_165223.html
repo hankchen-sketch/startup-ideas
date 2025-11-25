@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Project OrderFlex</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['Playfair Display', 'serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="bg-[#F6FAFB] text-[#1A1A1A] font-sans">
+  <!-- Navigation Header -->
+  <nav class="bg-[#F6FAFB] border-b border-[#E3EDF0] sticky top-0 z-50 backdrop-blur-sm bg-opacity-95">
+    <div class="max-w-7xl mx-auto px-6 py-4">
+      <div class="flex justify-between items-center">
+        <div class="flex items-center">
+          <span class="text-[#1A1A1A] font-serif text-2xl font-bold">
+            🔥 Project OrderFlex
+          </span>
+        </div>
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="#features" class="text-[#4A5F68] hover:text-[#3B9DB5] transition duration-200">核心功能</a>
+          <a href="#how-it-works" class="text-[#4A5F68] hover:text-[#3B9DB5] transition duration-200">使用步驟</a>
+          <a href="#pricing" class="text-[#4A5F68] hover:text-[#3B9DB5] transition duration-200">方案</a>
+          <a href="#cta" class="bg-[#3B9DB5] text-white px-6 py-2 rounded-lg hover:bg-[#2E8BA3] transition duration-200 font-semibold">加入等候名單</a>
+        </div>
+        <button class="md:hidden text-[#1A1A1A]" onclick="toggleMobileMenu()">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+      <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 space-y-3">
+        <a href="#features" class="block text-[#4A5F68] hover:text-[#3B9DB5] transition">核心功能</a>
+        <a href="#how-it-works" class="block text-[#4A5F68] hover:text-[#3B9DB5] transition">使用步驟</a>
+        <a href="#pricing" class="block text-[#4A5F68] hover:text-[#3B9DB5] transition">方案</a>
+        <a href="#cta" class="block bg-[#3B9DB5] text-white px-6 py-2 rounded-lg text-center hover:bg-[#2E8BA3] transition">加入等候名單</a>
+      </div>
+    </div>
+  </nav>
+  <script>
+    function toggleMobileMenu() {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    }
+  </script>
+
+  <!-- Hero Section -->
+  <section class="bg-[#F6FAFB] py-24 md:py-32 lg:py-40">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h1 class="text-[#1A1A1A] font-serif text-5xl md:text-6xl lg:text-7xl font-bold mb-6">
+        你可無痛修改訂單
+      </h1>
+      <p class="text-[#4A5F68] text-lg md:text-xl lg:text-2xl mb-2">
+        你是否曾經忙碌至錯過下單修改時間？
+      </p>
+      <p class="text-[#6B7F88] text-lg md:text-xl lg:text-2xl mb-8">
+        自助更改尺寸/數量/地址，30 分鐘內立即完成
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-4">
+        <a href="#cta" class="bg-[#3B9DB5] text-white hover:bg-[#2E8BA3] py-4 px-8 rounded-lg font-semibold transition duration-300">
+          免費開始使用
+        </a>
+        <a href="#features" class="bg-[#EEF5F7] text-[#2C3E45] hover:bg-[#E3EDF0] py-4 px-8 rounded-lg font-semibold transition duration-300">
+          了解更多
+        </a>
+      </div>
+      <p class="text-sm text-[#6B7F88]">
+        ✓ 完全免費  ✓ 無需信用卡  ✓ 2 分鐘快速設定
+      </p>
+    </div>
+  </section>
+
+  <!-- Problem Section -->
+  <section class="bg-[#E3EDF0] py-20 md:py-28">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-[#1A1A1A] font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-4">
+        為什麼你需要它？
+      </h2>
+      <p class="text-[#4A5F68] text-xl text-center mb-12">
+        因為這些問題每天都在發生
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-[#EEF5F7] p-8 rounded-xl">
+          <div class="bg-[#E8F5F8] w-20 h-20 rounded-2xl flex items-center justify-center mb-6">
+            <span class="text-5xl">⌛</span>
+          </div>
+          <h3 class="text-[#1A1A1A] font-serif font-semibold text-xl mb-3">客服等待太久</h3>
+          <p class="text-[#4A5F68] text-base leading-relaxed">
+            客戶必須耗時聯繫客服，才能更新訂單資訊，效率低且容易漏信。
+          </p>
+        </div>
+        <div class="bg-[#EEF5F7] p-8 rounded-xl">
+          <div class="bg-[#E8F5F8] w-20 h-20 rounded-2xl flex items-center justify-center mb-6">
+            <span class="text-5xl">🔄</span>
+          </div>
+          <h3 class="text-[#1A1A1A] font-serif font-semibold text-xl mb-3">多平台操作複雜</h3>
+          <p class="text-[#4A5F68] text-base leading-relaxed">
+            Shopify、WooCommerce…平台繁多，客戶不知該在哪修改訂單。
+          </p>
+        </div>
+        <div class="bg-[#EEF5F7] p-8 rounded-xl">
+          <div class="bg-[#E8F5F8] w-20 h-20 rounded-2xl flex items-center justify-center mb-6">
+            <span class="text-5xl">❌</span>
+          </div>
+          <h3 class="text-[#1A1A1A] font-serif font-semibold text-xl mb-3">錯誤頻繁退貨</h3>
+          <p class="text-[#4A5F68] text-base leading-relaxed">
+            客服手動修改容易出錯，衍生退貨、補發，成本高昂。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Transition -->
+  <section class="bg-[#F6FAFB] py-8 md:py-12">
+    <p class="text-2xl md:text-3xl text-[#4A5F68] font-serif italic text-center">
+      現在，這一切都能輕鬆解決
+    </p>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="bg-[#F6FAFB] py-20 md:py-28">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-[#1A1A1A] font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-12">
+        核心功能
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-[#EEF5F7] p-8 rounded-xl hover:transform hover:-translate-y-1 transition duration-300">
+          <div class="bg-[#E8F5F8] w-20 h-20 rounded-full flex items-center justify-center mb-6">
+            <span class="text-5xl">🎯</span>
+          </div>
+          <h3 class="text-[#1A1A1A] font-serif font-semibold text-2xl mb-3">即時自助修改</h3>
+          <p class="text-[#4A5F68] text-base leading-relaxed">
+            顧客登入後即可更改尺寸、數量、地址，30 分鐘內完成。
+          </p>
+        </div>
+        <div class="bg-[#EEF5F7] p-8 rounded-xl hover:transform hover:-translate-y-1 transition duration-300">
+          <div class="bg-[#E8F5F8] w-20 h-20 rounded-full flex items-center justify-center mb-6">
+            <span class="text-5xl">🔗</span>
+          </div>
+          <h3 class="text-[#1A1A1A] font-serif font-semibold text-2xl mb-3">多平台同步</h3>
+          <p class="text-[#4A5F68] text-base leading-relaxed">
+            Smart Sync API 一鍵對接 Shopify、WooCommerce 與更多平台。
+          </p>
+        </div>
+        <div class="bg-[#EEF5F7] p-8 rounded-xl hover:transform hover:-translate-y-1 transition duration-300">
+          <div class="bg-[#E8F5F8] w-20 h-20 rounded-full flex items-center justify-center mb-6">
+            <span class="text-5xl">🤖</span>
+          </div>
+          <h3 class="text-[#1A1A1A] font-serif font-semibold text-2xl mb-3">AI 語意轉換</h3>
+          <p class="text-[#4A5F68] text-base leading-relaxed">
+            AI Assist 自然語意解析，使用者只需簡單描述即可完成修改。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section id="how-it-works" class="bg-[#E3EDF0] py-20 md:py-28">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-[#1A1A1A] font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-12">
+        三步驟，立即開始
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div class="text-center">
+          <div class="bg-[#3B9DB5] text-white text-3xl font-bold w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">1</div>
+          <h3 class="text-[#1A1A1A] font-serif font-semibold text-xl mb-3">安裝 Widget</h3>
+          <p class="text-[#4A5F68] text-base">複製程式碼，3 步完成嵌入。</p>
+        </div>
+        <div class="text-center">
+          <div class="bg-[#3B9DB5] text-white text-3xl font-bold w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">2</div>
+          <h3 class="text-[#1A1A1A] font-serif font-semibold text-xl mb-3">顧客修改</h3>
+          <p class="text-[#4A5F68] text-base">顧客在訂單後台自助編輯。</p>
+        </div>
+        <div class="text-center">
+          <div class="bg-[#3B9DB5] text-white text-3xl font-bold w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">3</div>
+          <h3 class="text-[#1A1A1A] font-serif font-semibold text-xl mb-3">同步更新</h3>
+          <p class="text-[#4A5F68] text-base">後端即時同步至所有平台。</p>
+        </div>
+      </div>
+      <p class="text-lg text-[#4A5F68] text-center mt-12">就是這麼簡單！現在就開始吧 👇</p>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="pricing" class="bg-[#F6FAFB] py-20 md:py-28">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-[#1A1A1A] font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-4">簡單透明的方案</h2>
+      <p class="text-[#4A5F68] text-xl text-center mb-12">從免費開始，隨時升級</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+        <div class="bg-[#EEF5F7] p-8 rounded-xl">
+          <h3 class="text-[#1A1A1A] font-serif font-bold text-2xl mb-2">免費方案</h3>
+          <p class="text-[#6B7F88] mb-6">適合個人使用</p>
+          <p class="text-[#1A1A1A] text-4xl font-bold mb-6">$0<span class="text-xl text-[#6B7F88]">/月</span></p>
+          <ul class="space-y-3 mb-8">
+            <li class="text-[#4A5F68] flex items-start"><span class="text-[#3B9DB5] mr-2">✓</span>即時自助修改</li>
+            <li class="text-[#4A5F68] flex items-start"><span class="text-[#3B9DB5] mr-2">✓</span>多平台同步</li>
+          </ul>
+          <a href="#cta" class="block text-center bg-[#E3EDF0] text-[#1A1A1A] py-3 px-6 rounded-lg hover:bg-[#EEF5F7] transition">開始使用</a>
+        </div>
+        <div class="bg-[#3B9DB5] p-8 rounded-xl text-white relative">
+          <div class="absolute -top-4 right-4 bg-[#2C3E45] text-white px-4 py-1 rounded-full text-sm font-semibold">最受歡迎</div>
+          <h3 class="font-serif font-bold text-2xl mb-2">專業方案</h3>
+          <p class="opacity-90 mb-6">適合團隊使用</p>
+          <p class="text-4xl font-bold mb-6">$29<span class="text-xl opacity-90">/月</span></p>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-start"><span class="mr-2">✓</span>免費方案所有功能</li>
+            <li class="flex items-start"><span class="mr-2">✓</span>進階 Smart Sync</li>
+            <li class="flex items-start"><span class="mr-2">✓</span>AI 語意轉換</li>
+          </ul>
+          <a href="#cta" class="block text-center bg-white text-[#3B9DB5] py-3 px-6 rounded-lg hover:bg-opacity-90 transition font-semibold">立即升級</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section id="cta" class="bg-[#2C3E45] py-24 md:py-32">
+    <div class="max-w-2xl mx-auto px-6">
+      <h2 class="text-[#F6FAFB] font-serif text-4xl md:text-5xl font-bold text-center mb-4">成為首批體驗者</h2>
+      <p class="text-[#E3EDF0] text-xl text-center mb-8">提早加入，獲得專屬優惠 🎁</p>
+      <form action="https://hook.us2.make.com/5z0gf5jwihdjvk59wcidkxxtroh52jm1" method="POST" class="max-w-md mx-auto">
+        <input type="hidden" name="idea_name" value="🔥 Project OrderFlex - 顧客可在下單後 30 分鐘至 48 小時內，自己改尺寸/數量/地址/單品，免等客服，省時又少錯😤 誰在崩潰？“有沒有讓客戶自助修改訂單的工具？”#客服單爆滿🛠️ 我們的切入點：MVP：30分–48小時內自助換尺寸／數量／地址／取消補差的 Widget，技術亮點：Smart Sync 多平台 API 對接＋規則引擎＋AI Assist 自然語意轉換">
+        <div class="mb-4">
+          <input type="email" name="email" required placeholder="輸入你的 Email"
+            class="w-full px-6 py-4 text-lg border-2 border-[#E3EDF0] bg-white/10 text-white placeholder-[#6B7F88] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#3B9DB5] transition backdrop-blur-sm">
+        </div>
+        <button type="submit"
+          class="w-full bg-[#3B9DB5] text-white font-bold text-lg py-4 px-8 rounded-lg hover:bg-[#2E8BA3] transition duration-300 transform hover:scale-105">
+          立即加入等候名單 →
+        </button>
+      </form>
+      <p class="text-sm text-[#6B7F88] text-center mt-4">
+        ✓ 我們重視隱私，絕不外洩你的資料  ✓ 隨時可取消訂閱
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#F6FAFB] border-t border-[#E3EDF0] py-12">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+        <div class="md:col-span-2">
+          <h3 class="text-[#1A1A1A] font-serif text-xl font-bold mb-3">CMoney</h3>
+          <p class="text-[#4A5F68] text-sm">用科技簡化電商訂單修改流程，提升客服效率，降低錯誤成本。</p>
+        </div>
+        <div>
+          <h4 class="text-[#1A1A1A] font-semibold mb-3">產品</h4>
+          <ul class="space-y-2">
+            <li><a href="#features" class="text-[#4A5F68] hover:text-[#3B9DB5] text-sm transition">功能</a></li>
+            <li><a href="#pricing" class="text-[#4A5F68] hover:text-[#3B9DB5] text-sm transition">方案</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-[#1A1A1A] font-semibold mb-3">公司</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-[#4A5F68] hover:text-[#3B9DB5] text-sm transition">關於我們</a></li>
+            <li><a href="#" class="text-[#4A5F68] hover:text-[#3B9DB5] text-sm transition">聯絡我們</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-[#E3EDF0] pt-8 text-center">
+        <p class="text-[#6B7F88] text-sm">© 2024 CMoney. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
