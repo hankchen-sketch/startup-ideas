@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Project Threadly — Context AI for Deep Work</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { serif: ['Playfair Display', 'serif'] },
+          colors: {
+            'main-bg': '#F6FAFB',
+            'card-bg': '#EEF5F7',
+            'contrast-bg': '#E3EDF0',
+            'dark-bg': '#2C3E45',
+            'accent': '#3B9DB5',
+            'accent-hover': '#358DA3',
+            'icon-bg': '#E8F5F8',
+            'text-main': '#1A1A1A',
+            'text-sub': '#4A5F68',
+            'text-desc': '#6B7F88'
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-main-bg text-text-main antialiased">
+  <!-- Hero -->
+  <section id="hero" class="bg-main-bg py-32">
+    <div class="max-w-5xl mx-auto px-6">
+      <h1 class="font-serif text-5xl md:text-7xl font-bold text-center">
+        專注深工，效率翻倍
+      </h1>
+      <div class="mt-6 space-y-2 text-center">
+        <p class="text-text-sub text-xl">
+          你是否在多工與雜訊中不斷切換，總是難以回到心流？
+        </p>
+        <p class="text-text-desc text-xl">
+          情境 AI 即時整合脈絡，讓你一鍵回到關鍵任務與下一步。
+        </p>
+      </div>
+
+      <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="#cta" class="inline-flex items-center justify-center bg-accent text-white font-semibold py-4 px-8 rounded-lg hover:bg-accent-hover hover:scale-105 transition">
+          免費加入等候名單 →
+        </a>
+        <a href="#how-it-works" class="inline-flex items-center justify-center bg-card-bg text-dark-bg font-semibold py-4 px-8 rounded-lg hover:scale-105 transition">
+          了解它如何幫你
+        </a>
+      </div>
+
+      <p class="mt-6 text-center text-sm text-text-desc">
+        ✓完全免費 ✓無需信用卡
+      </p>
+    </div>
+  </section>
+
+  <!-- Problem -->
+  <section class="bg-contrast-bg py-24">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="font-serif text-3xl md:text-4xl font-bold text-center">
+        為什麼你需要它？
+      </h2>
+      <p class="text-center text-text-desc mt-2">
+        因為這些問題每天都在發生
+      </p>
+
+      <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-card-bg rounded-xl p-8">
+          <div class="w-20 h-20 rounded-2xl flex items-center justify-center text-3xl bg-icon-bg">
+            🧩
+          </div>
+          <h3 class="mt-6 font-semibold text-lg">
+            你是否曾經…
+          </h3>
+          <p class="mt-2 text-text-sub">
+            每次切換視窗後，都要花 5–10 分鐘回想「我剛剛做到哪？」上下文像拼圖一樣散落各處。
+          </p>
+        </div>
+
+        <div class="bg-card-bg rounded-xl p-8">
+          <div class="w-20 h-20 rounded-2xl flex items-center justify-center text-3xl bg-icon-bg">
+            📥
+          </div>
+          <h3 class="mt-6 font-semibold text-lg">
+            你是否曾經…
+          </h3>
+          <p class="mt-2 text-text-sub">
+            任務被訊息打斷，重點散落在 Slack、Email、Docs、Issue 中，回來時只剩零碎片段。
+          </p>
+        </div>
+
+        <div class="bg-card-bg rounded-xl p-8">
+          <div class="w-20 h-20 rounded-2xl flex items-center justify-center text-3xl bg-icon-bg">
+            🕰️
+          </div>
+          <h3 class="mt-6 font-semibold text-lg">
+            你是否曾經…
+          </h3>
+          <p class="mt-2 text-text-sub">
+            開完會做了紀錄，但回到工位仍不確定第一步該做什麼，時間在猶豫中流逝。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Transition -->
+  <section class="bg-main-bg py-12">
+    <p class="max-w-3xl mx-auto px-6 italic text-center text-text-sub">
+      現在，這一切都能輕鬆解決
+    </p>
+  </section>
+
+  <!-- Features -->
+  <section class="bg-main-bg py-24">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-card-bg rounded-xl p-8 transition-transform hover:-translate-y-1">
+          <div class="w-20 h-20 rounded-full bg-icon-bg flex items-center justify-center text-5xl">
+            ⚡
+          </div>
+          <h3 class="mt-6 font-semibold">
+            秒懂重點
+          </h3>
+          <p class="text-text-sub mt-2">
+            3 行就看懂文件與會議摘要，立即把握決策信息，不再被長篇內容拖慢節奏。
+          </p>
+        </div>
+
+        <div class="bg-card-bg rounded-xl p-8 transition-transform hover:-translate-y-1">
+          <div class="w-20 h-20 rounded-full bg-icon-bg flex items-center justify-center text-5xl">
+            🧠
+          </div>
+          <h3 class="mt-6 font-semibold">
+            一鍵回到脈絡
+          </h3>
+          <p class="text-text-sub mt-2">
+            回到任務即自帶上次進度、引用片段與待辦清單，省去找資料與回憶的時間。
+          </p>
+        </div>
+
+        <div class="bg-card-bg rounded-xl p-8 transition-transform hover:-translate-y-1">
+          <div class="w-20 h-20 rounded-full bg-icon-bg flex items-center justify-center text-5xl">
+            🔗
+          </div>
+          <h3 class="mt-6 font-semibold">
+            減少切換成本
+          </h3>
+          <p class="text-text-sub mt-2">
+            自動串起 Slack / Docs / Issue 的關鍵片段，相關資訊一次到位，降低來回跳轉。
+          </p>
+        </div>
+
+        <div class="bg-card-bg rounded-xl p-8 transition-transform hover:-translate-y-1">
+          <div class="w-20 h-20 rounded-full bg-icon-bg flex items-center justify-center text-5xl">
+            📌
+          </div>
+          <h3 class="mt-6 font-semibold">
+            明確下一步
+          </h3>
+          <p class="text-text-sub mt-2">
+            依你的節奏產生可執行的下一步與提醒，讓每一次開始都更快、更穩。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section id="how-it-works" class="bg-contrast-bg py-24">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="font-serif text-3xl md:text-4xl font-bold text-center">
+        How It Works
+      </h2>
+
+      <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-card-bg rounded-xl p-8">
+          <div class="w-16 h-16 rounded-full bg-accent text-white flex items-center justify-center text-2xl font-bold">
+            1
+          </div>
+          <h3 class="mt-6 font-semibold">
+            連接工具
+          </h3>
+          <p class="text-text-sub mt-2">
+            連接你常用的工作來源（Slack、Email、Docs、Issues），一次性授權即可。
+          </p>
+        </div>
+
+        <div class="bg-card-bg rounded-xl p-8">
+          <div class="w-16 h-16 rounded-full bg-accent text-white flex items-center justify-center text-2xl font-bold">
+            2
+          </div>
+          <h3 class="mt-6 font-semibold">
+            抽取脈絡
+          </h3>
+          <p class="text-text-sub mt-2">
+            自動萃取對任務有用的對話與片段，整理成清晰的 Thread，隨時可召回。
+          </p>
+        </div>
+
+        <div class="bg-card-bg rounded-xl p-8">
+          <div class="w-16 h-16 rounded-full bg-accent text-white flex items-center justify-center text-2xl font-bold">
+            3
+          </div>
+          <h3 class="mt-6 font-semibold">
+            專注執行
+          </h3>
+          <p class="text-text-sub mt-2">
+            啟動專注模式，立即獲得當下重點與下一步行動，保持心流直到完成。
+          </p>
+        </div>
+      </div>
+
+      <p class="mt-10 text-center text-text-sub">
+        就是這麼簡單！現在就開始吧👇
+      </p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="cta" class="bg-dark-bg py-32">
+    <div class="max-w-3xl mx-auto px-6 text-center">
+      <h2 class="font-serif text-4xl md:text-5xl font-bold text-main-bg">
+        成為首批體驗者
+      </h2>
+      <p class="mt-3 text-contrast-bg">
+        提早加入，獲得專屬優惠🎁
+      </p>
+
+      <form action="https://hook.us2.make.com/5z0gf5jwihdjvk59wcidkxxtroh52jm1" method="POST" class="max-w-md mx-auto mt-8">
+        <input type="hidden" name="idea_name" value="# 🚀 Project Threadly
+
+> **The Hook**：Context AI for Deep Work
+
+## 1. The Real Problem (真實痛點)
+* .">
+        <input type="email" name="email" required 
+               class="w-full px-6 py-4 border-2 bg-white/10 text-white placeholder-opacity-60 rounded-lg focus:ring-2 focus:ring-accent" 
+               placeholder="輸入你的 Email">
+        <button type="submit" 
+                class="w-full bg-accent text-white font-bold py-4 px-8 rounded-lg hover:bg-accent-hover hover:scale-105 transition mt-4">
+          立即加入等候名單 →
+        </button>
+      </form>
+
+      <p class="mt-4 text-sm text-contrast-bg">
+        ✓我們重視隱私 ✓隨時可取消
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-main-bg py-8">
+    <p class="text-text-desc text-sm text-center">
+      © 2025 Project Threadly — Context AI for Deep Work. 保留所有權利。
+    </p>
+  </footer>
+</body>
+</html>
