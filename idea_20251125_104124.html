@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OrderEase — Self‑serve order editing for SMB e‑commerce</title>
+  <meta name="description" content="自助修改訂單，讓「取消重下」成為歷史。30 秒安裝，降低客服工單與營運成本。">
+  <meta property="og:title" content="OrderEase — 自助修改訂單，告別取消重下">
+  <meta property="og:description" content="SMB 電商 30 秒安裝，客戶可在出貨前自行變更地址、商品與數量，CX 工單大幅減少。">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://source.unsplash.com/1200x630/?ecommerce,shopping">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              50: '#eef2ff',
+              100: '#e0e7ff',
+              600: '#4f46e5',
+              700: '#4338ca',
+              800: '#3730a3'
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="antialiased text-gray-800 bg-gradient-to-b from-white to-gray-50">
+  <!-- Nav -->
+  <header class="sticky top-0 z-30 bg-white/70 backdrop-blur border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-2">
+        <span class="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-primary-600 text-white font-bold">OE</span>
+        <span class="text-lg font-semibold tracking-tight">OrderEase</span>
+      </a>
+      <nav class="hidden sm:flex items-center gap-6">
+        <a href="#features" class="text-gray-600 hover:text-gray-900">功能特色</a>
+        <a href="#cta" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-primary-600 text-white font-semibold hover:bg-primary-700 shadow">
+          立即加入候補名單
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+          </svg>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative">
+    <div class="max-w-7xl mx-auto px-6 py-16 lg:py-24 grid lg:grid-cols-2 gap-12 items-center">
+      <div>
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-50 text-primary-700 text-sm font-medium mb-4">
+          <span class="w-2 h-2 rounded-full bg-primary-600"></span> 新世代電商客服減壓工具
+        </div>
+        <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight leading-tight text-gray-900">
+          自助修改訂單，讓「取消重下」成為歷史
+        </h1>
+        <p class="mt-5 text-lg text-gray-600">
+          SMB 電商 30 秒安裝，客戶可在出貨前自行變更地址、商品與數量、配送方式，CX 工單大幅減少，營運更順。
+        </p>
+        <p class="mt-3 text-sm text-gray-500">
+          Self‑serve order editing for SMB e‑commerce — install in 30 seconds, slash CX tickets from “cancel &amp; reorder”.
+        </p>
+        <div class="mt-8 flex flex-col sm:flex-row gap-3">
+          <a href="#cta" class="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-primary-600 text-white font-semibold hover:bg-primary-700 shadow">
+            我有興趣（加入等待名單）
+          </a>
+          <a href="#features" class="inline-flex items-center justify-center px-6 py-3 rounded-lg border border-gray-300 text-gray-700 font-semibold hover:bg-gray-50">
+            了解功能
+          </a>
+        </div>
+        <div class="mt-6 flex items-center gap-4 text-xs text-gray-500">
+          <div class="flex items-center gap-2">
+            <span class="inline-block w-2 h-2 bg-green-500 rounded-full"></span> 減少 30–60% 相關客服工單（早期測試）
+          </div>
+          <div>無需工程團隊 · 支援常見電商平台</div>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="absolute -inset-4 bg-gradient-to-tr from-primary-100/60 to-transparent rounded-3xl blur-2xl"></div>
+        <img src="https://source.unsplash.com/1000x800/?ecommerce,shopping" alt="OrderEase cover" class="relative rounded-2xl shadow-xl ring-1 ring-black/5 w-full object-cover">
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="py-14 lg:py-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="max-w-2xl">
+        <h2 class="text-3xl font-bold text-gray-900">三大核心價值</h2>
+        <p class="mt-3 text-gray-600">把客訴減到最低，把營運效率拉到最高。</p>
+      </div>
+
+      <div class="mt-10 grid md:grid-cols-3 gap-6">
+        <!-- Feature 1 -->
+        <div class="p-6 bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition">
+          <div class="w-11 h-11 rounded-lg bg-primary-600 text-white flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/>
+            </svg>
+          </div>
+          <h3 class="mt-4 text-xl font-semibold text-gray-900">自助編輯訂單</h3>
+          <p class="mt-2 text-gray-600">在出貨前的安全時窗內，客戶可自行變更地址、品項/規格、數量與配送方式；庫存、金額與稅費即時同步。</p>
+          <ul class="mt-3 text-sm text-gray-500 list-disc pl-5 space-y-1">
+            <li>可設定可編輯欄位與時限</li>
+            <li>自動通知與稽核軌跡</li>
+            <li>黑名單/高風險防護</li>
+          </ul>
+        </div>
+        <!-- Feature 2 -->
+        <div class="p-6 bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition">
+          <div class="w-11 h-11 rounded-lg bg-primary-600 text-white flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+            </svg>
+          </div>
+          <h3 class="mt-4 text-xl font-semibold text-gray-900">30 秒安裝</h3>
+          <p class="mt-2 text-gray-600">無需工程資源，貼上一段 snippet 即可啟用。支援常見平台（Shopify、WooCommerce 等）。</p>
+          <ul class="mt-3 text-sm text-gray-500 list-disc pl-5 space-y-1">
+            <li>零程式碼設定</li>
+            <li>現有流程無縫整合</li>
+            <li>彈性品牌化與多語系</li>
+          </ul>
+        </div>
+        <!-- Feature 3 -->
+        <div class="p-6 bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition">
+          <div class="w-11 h-11 rounded-lg bg-primary-600 text-white flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+          </div>
+          <h3 class="mt-4 text-xl font-semibold text-gray-900">CX 工單大幅減少</h3>
+          <p class="mt-2 text-gray-600">把「取消重下」轉為「自行修正」，降低來回溝通成本，讓客服專注於高價值案例。</p>
+          <ul class="mt-3 text-sm text-gray-500 list-disc pl-5 space-y-1">
+            <li>可量化 KPI：取消率/重下率下降</li>
+            <li>完整審核與回滾機制</li>
+            <li>支援 SLA 與多角色權限</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="cta" class="relative overflow-hidden">
+    <div class="absolute inset-0 -z-10 bg-gradient-to-br from-primary-50 via-white to-white"></div>
+    <div class="max-w-3xl mx-auto px-6 py-16 lg:py-20">
+      <div class="text-center">
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900">加入等待名單，搶先體驗 OrderEase</h2>
+        <p class="mt-3 text-gray-600">我們將在 Beta 開放時寄送邀請。無垃圾信、可隨時退訂。</p>
+      </div>
+
+      <div class="mt-8 rounded-2xl border border-gray-200 bg-white/70 backdrop-blur p-6 sm:p-8 shadow-sm">
+        <form action="請貼上_流程B_的Webhook_URL" method="POST" class="space-y-4">
+          <input type="hidden" name="idea_name" value="# 🚀 Project OrderEase&#10;&#10;&gt; The Hook (一句話鉤子)：&#10;&gt; Self‑serve order editing for SMB e‑commerce — install in 30 seconds, slash CX tickets from “cancel &amp; reorder”">
+          <div class="mb-4">
+            <label for="email" class="block text-gray-700 text-sm font-bold mb-2">您的 Email</label>
+            <input id="email" type="email" name="email" required class="w-full px-4 py-3 rounded-lg border border-gray-300 bg-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-600 focus:border-primary-600 transition" placeholder="name@example.com">
+          </div>
+          <button type="submit" class="w-full inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg bg-primary-600 text-white font-semibold hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-600 focus:ring-offset-2 shadow">
+            我有興趣 (加入等待名單)
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 -mr-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+            </svg>
+          </button>
+        </form>
+        <p class="mt-3 text-xs text-gray-500 text-center">我們重視您的隱私，只會用於此專案的聯絡與更新。</p>
+      </div>
+
+      <div class="mt-10 flex items-center justify-center gap-4 text-sm text-gray-500">
+        <img src="https://source.unsplash.com/80x80/?shield,security" alt="security" class="w-8 h-8 rounded-lg object-cover">
+        <span>資料以 HTTPS 傳輸 · 可隨時退訂</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-10 border-t border-gray-100">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-gray-500">
+      <div>© <span id="year"></span> OrderEase. All rights reserved.</div>
+      <div class="flex items-center gap-4">
+        <a href="#features" class="hover:text-gray-800">功能</a>
+        <a href="#cta" class="hover:text-gray-800">加入候補名單</a>
+        <a href="#" class="hover:text-gray-800">隱私</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
