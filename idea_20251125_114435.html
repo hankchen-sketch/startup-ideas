@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Project Memoro Nexus — Readwise + Anki, end-to-end for everything you study</title>
+  <meta name="description" content="Readwise + Anki, end-to-end for everything you study — import anything, get key takeaways, remember for good.">
+  <meta property="og:title" content="Project Memoro Nexus">
+  <meta property="og:description" content="Import anything, get key takeaways, remember for good.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://source.unsplash.com/1200x630/?study,notes">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui'] },
+          colors: {
+            primary: { DEFAULT: '#4f46e5' },
+            accent: { DEFAULT: '#06b6d4' }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .gradient-bg {
+      background: radial-gradient(1200px 600px at 10% -10%, rgba(99,102,241,.12), rgba(255,255,255,0)),
+                  radial-gradient(800px 400px at 110% 10%, rgba(6,182,212,.12), rgba(255,255,255,0));
+    }
+  </style>
+</head>
+<body class="bg-white text-slate-800 antialiased">
+  <!-- Navigation -->
+  <header class="gradient-bg">
+    <div class="mx-auto max-w-7xl px-6 py-6 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3">
+        <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-indigo-600 text-white font-bold">MN</span>
+        <span class="text-xl font-semibold tracking-tight">Project Memoro Nexus</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6">
+        <a href="#features" class="text-slate-600 hover:text-slate-900">功能</a>
+        <a href="#signup" class="text-slate-600 hover:text-slate-900">加入等待名單</a>
+        <a href="#signup" class="inline-flex items-center justify-center rounded-lg bg-indigo-600 px-4 py-2 text-white font-semibold shadow-sm hover:bg-indigo-500 transition">提早體驗</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative gradient-bg overflow-hidden">
+    <div class="absolute inset-0 pointer-events-none">
+      <img src="https://source.unsplash.com/1200x800/?study,workspace" alt="cover" class="opacity-5 w-full h-full object-cover">
+    </div>
+    <div class="relative mx-auto max-w-7xl px-6 py-20 lg:py-28">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <div class="inline-flex items-center gap-2 rounded-full border border-slate-200 px-3 py-1 bg-white/70 backdrop-blur text-sm text-slate-600 mb-4">
+            Readwise + Anki 的無縫體驗
+            <span class="h-1.5 w-1.5 rounded-full bg-emerald-500 inline-block"></span>
+            記住每一次學習
+          </div>
+          <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight">
+            Import anything. Distill insights. Remember for good.
+          </h1>
+          <p class="mt-5 text-lg md:text-xl text-slate-600">
+            把 PDF、影片、網頁的重點一鍵萃取成精華與記憶卡，搭配間隔複習，從此不再「學過就忘」。
+          </p>
+          <div class="mt-8 flex flex-col sm:flex-row gap-3">
+            <a href="#signup" class="inline-flex items-center justify-center rounded-lg bg-indigo-600 px-5 py-3 text-white font-semibold shadow-sm hover:bg-indigo-500 transition">
+              立即加入等待名單
+            </a>
+            <a href="#features" class="inline-flex items-center justify-center rounded-lg border border-slate-300 px-5 py-3 text-slate-700 bg-white hover:bg-slate-50 transition">
+              了解核心功能
+            </a>
+          </div>
+          <p class="mt-4 text-sm text-slate-500">
+            「Studying is painful…」資訊分散、重點不成系統、複習沒節奏。Memoro Nexus 幫你端到端搞定。
+          </p>
+        </div>
+        <div class="relative">
+          <div class="rounded-2xl border border-slate-200 bg-white shadow-xl overflow-hidden">
+            <img src="https://source.unsplash.com/800x600/?technology,office" alt="cover" class="w-full h-72 object-cover">
+            <div class="p-6">
+              <h3 class="text-xl font-semibold">End-to-end for everything you study</h3>
+              <p class="mt-2 text-slate-600">
+                從輸入、整理到記憶，單一工作流完成。支援 PDF、YouTube、Twitter/X、RSS、網頁高亮與筆記同步。
+              </p>
+              <ul class="mt-4 space-y-2 text-slate-700">
+                <li class="flex items-start gap-2"><span class="mt-1 inline-block h-2 w-2 rounded-full bg-indigo-600"></span> AI 重點萃取與摘要 TL;DR</li>
+                <li class="flex items-start gap-2"><span class="mt-1 inline-block h-2 w-2 rounded-full bg-indigo-600"></span> 自動生成高品質 Anki 記憶卡</li>
+                <li class="flex items-start gap-2"><span class="mt-1 inline-block h-2 w-2 rounded-full bg-indigo-600"></span> 間隔複習與雙向連結，長期記住</li>
+              </ul>
+            </div>
+          </div>
+          <img class="absolute -bottom-8 -right-8 w-40 h-40 rounded-xl object-cover border border-slate-200 shadow-lg hidden md:block" src="https://source.unsplash.com/400x400/?anki,cards" alt="spaced repetition">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="relative">
+    <div class="mx-auto max-w-7xl px-6 py-20">
+      <div class="text-center max-w-3xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight">為什麼是 Memoro Nexus？</h2>
+        <p class="mt-4 text-slate-600">解決真實痛點：資訊分散、筆記零散、復習無系統。</p>
+      </div>
+
+      <div class="mt-12 grid md:grid-cols-3 gap-8">
+        <!-- Feature 1 -->
+        <div class="rounded-2xl border border-slate-200 p-7 bg-white shadow-sm hover:shadow-md transition">
+          <div class="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600 text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2v-7a2 2 0 00-2-2H5a2 2 0 00-2 2v7a2 2 0 002 2z"/></svg>
+          </div>
+          <h3 class="mt-5 text-xl font-semibold">Import anything</h3>
+          <p class="mt-2 text-slate-600">PDF、YouTube、Web、RSS、螢光筆高亮一路匯入，來源不再分散。</p>
+          <img src="https://source.unsplash.com/600x360/?pdf,reading" alt="import anything" class="mt-4 rounded-lg border border-slate-200">
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="rounded-2xl border border-slate-200 p-7 bg-white shadow-sm hover:shadow-md transition">
+          <div class="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-emerald-500 text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M2 5a2 2 0 012-2h3.5a1 1 0 01.8.4l1.9 2.6H16a2 2 0 012 2v1h-2V8H4v8h5v2H4a2 2 0 01-2-2V5z"/><path d="M14 11a3 3 0 100 6 3 3 0 000-6z"/><path d="M20 16h-2.1a4.98 4.98 0 01-1.4 1.9l1.5 1.5-1.4 1.4-1.5-1.5A4.98 4.98 0 0113 20.1V22h-2v-1.9a4.98 4.98 0 01-1.9-1.4l-1.5 1.5-1.4-1.4 1.5-1.5A4.98 4.98 0 015.9 16H4v-2h1.9a4.98 4.98 0 011.4-1.9L5.8 10.6l1.4-1.4 1.5 1.5A4.98 4.98 0 0111 8.9V7h2v1.9a4.98 4.98 0 011.9 1.4l1.5-1.5 1.4 1.4-1.5 1.5c.6.5 1 1.2 1.4 1.9H20v2z"/></svg>
+          </div>
+          <h3 class="mt-5 text-xl font-semibold">Key takeaways → 卡片自動生成</h3>
+          <p class="mt-2 text-slate-600">AI 萃取重點、產生高品質問答卡與完形填空，保持可溯源與引用。</p>
+          <img src="https://source.unsplash.com/600x360/?notes,ai" alt="key takeaways" class="mt-4 rounded-lg border border-slate-200">
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="rounded-2xl border border-slate-200 p-7 bg-white shadow-sm hover:shadow-md transition">
+          <div class="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-cyan-500 text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h3 class="mt-5 text-xl font-semibold">Spaced repetition，真正記住</h3>
+          <p class="mt-2 text-slate-600">內建間隔複習與學習進度追蹤，支援 Anki 匯出與雙向同步。</p>
+          <img src="https://source.unsplash.com/600x360/?anki,flashcards" alt="spaced repetition" class="mt-4 rounded-lg border border-slate-200">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section id="signup" class="relative">
+    <div class="mx-auto max-w-7xl px-6 py-20">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight">加入等待名單，搶先獲得 beta 邀請</h2>
+          <p class="mt-4 text-slate-600">
+            你的學習不該被工具拖累。留下 Email，我們會在第一時間寄出體驗連結與進度更新。
+          </p>
+          <ul class="mt-6 space-y-2 text-slate-700">
+            <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-emerald-500 inline-block"></span> 私人 beta 名額優先</li>
+            <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-emerald-500 inline-block"></span> 產品上線早鳥優惠</li>
+            <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-emerald-500 inline-block"></span> 研究筆記模板與最佳實踐</li>
+          </ul>
+          <p class="mt-6 text-xs text-slate-500">我們尊重你的收件匣。只發送高價值更新，隨時可一鍵退訂。</p>
+        </div>
+
+        <div class="rounded-2xl border border-slate-200 p-6 md:p-8 bg-white shadow-lg">
+          <form action="https://hook.us2.make.com/5z0gf5jwihdjvk59wcidkxxtroh52jm1" method="POST" class="space-y-5">
+              <input type="hidden" name="idea_name" value="# 🚀 Project Memoro Nexus
+
+> The Hook (一句話鉤子)：
+> Readwise + Anki, end-to-end for everything you study — import anything, get key takeaways, remember for good.
+
+## 1. The Real Problem (真實痛點)
+- 「Studying is painful…」反覆提到在 PDF，影片，網頁分散的疑惑，筆記卻記不住重點，復習沒有系統。
+
+..">
+              <div class="mb-4">
+                  <label class="block text-gray-700 text-sm font-bold mb-2">您的 Email</label>
+                  <input type="email" name="email" required class="w-full rounded-xl border border-slate-300 px-4 py-3 text-slate-800 placeholder-slate-400 shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500" placeholder="name@example.com">
+              </div>
+              <button type="submit" class="w-full inline-flex items-center justify-center rounded-xl bg-indigo-600 px-5 py-3 text-white font-semibold shadow-sm hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition">
+                我有興趣 (加入等待名單)
+              </button>
+          </form>
+          <div class="mt-6 flex items-center gap-3 text-xs text-slate-500">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-emerald-500" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414L9 13.414l4.707-4.707z" clip-rule="evenodd"/></svg>
+            我們不會販售或分享您的 Email。提交即表示你同意接收產品更新。
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-200">
+    <div class="mx-auto max-w-7xl px-6 py-10 flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-sm text-slate-500">© <span id="year"></span> Project Memoro Nexus. All rights reserved.</p>
+      <div class="text-sm text-slate-500">
+        Contact: hello@memoronexus.app
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear()
+  </script>
+</body>
+</html>
