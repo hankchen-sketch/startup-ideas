@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>夢製者 - AI分身，24H變現</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .font-serif { font-family: 'Playfair Display', serif; }
+  </style>
+</head>
+<body class="bg-[#F7F9FB] text-[#1A1A1A]">
+
+  <!-- Navigation -->
+  <nav class="sticky top-0 z-50 bg-[#F7F9FB] shadow">
+    <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#" class="text-2xl font-bold">夢製者</a>
+      <div class="hidden md:flex space-x-6">
+        <a href="#features" class="text-[#4A5A6D] hover:text-[#5B7FA8]">核心功能</a>
+        <a href="#howitworks" class="text-[#4A5A6D] hover:text-[#5B7FA8]">使用步驟</a>
+        <a href="#pricing" class="text-[#4A5A6D] hover:text-[#5B7FA8]">方案</a>
+        <a href="#cta" class="text-[#4A5A6D] hover:text-[#5B7FA8]">加入等候名單</a>
+      </div>
+      <button id="nav-toggle" class="md:hidden">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+    <div id="nav-menu" class="md:hidden hidden px-6 pb-4">
+      <a href="#features" class="block py-2 text-[#4A5A6D] hover:text-[#5B7FA8]">核心功能</a>
+      <a href="#howitworks" class="block py-2 text-[#4A5A6D] hover:text-[#5B7FA8]">使用步驟</a>
+      <a href="#pricing" class="block py-2 text-[#4A5A6D] hover:text-[#5B7FA8]">方案</a>
+      <a href="#cta" class="block py-2 text-[#4A5A6D] hover:text-[#5B7FA8]">加入等候名單</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="container mx-auto px-6 py-16 flex flex-col-reverse lg:flex-row items-center">
+    <div class="w-full lg:w-1/2 mt-8 lg:mt-0">
+      <h1 class="font-serif text-4xl lg:text-6xl text-[#1A1A1A]">AI分身，24H變現</h1>
+      <p class="mt-4 text-xl lg:text-2xl text-[#4A5A6D] leading-relaxed">
+        建立你的 KOL AI 分身，全天候回應<br>粉絲提問，同步賺取收益
+      </p>
+      <div class="mt-8 flex flex-wrap gap-4">
+        <a href="#features" class="px-6 py-3 bg-[#5B7FA8] hover:bg-[#4A6E97] text-white rounded-lg font-semibold">立即體驗</a>
+        <a href="#pricing" class="px-6 py-3 border-2 border-[#5B7FA8] hover:bg-[#5B7FA8] hover:text-white text-[#5B7FA8] rounded-lg font-semibold">方案比較</a>
+      </div>
+      <div class="mt-6 flex flex-wrap gap-6 text-[#6A7A8D]">
+        <span class="flex items-center gap-2">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M5 13l4 4L19 7"/>
+          </svg>
+          100+ KOLs 選擇
+        </span>
+        <span class="flex items-center gap-2">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M13 10V3L4 14h7v7l9-11h-7z"/>
+          </svg>
+          即問即付變現
+        </span>
+      </div>
+    </div>
+    <div class="w-full lg:w-1/2">
+      <img src="data:image/png;base64,2025-11-26T03:22:30.000Z" alt="Hero" class="w-full rounded-2xl shadow-lg">
+    </div>
+  </section>
+
+  <!-- Problem Section -->
+  <section id="problem" class="bg-[#EEF3F7] py-16">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-serif text-center text-[#1A1A1A]">你的困擾</h2>
+      <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="flex flex-col items-center text-center">
+          <svg class="w-6 h-6 text-[#5B7FA8] mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M13 10V3L4 14h7v7l9-11h-7z"/>
+          </svg>
+          <h3 class="font-semibold text-lg text-[#1A1A1A]">訊息爆量難回覆</h3>
+          <p class="mt-2 text-[#6A7A8D]">每天收到上千訊息，無法及時回覆粉絲</p>
+        </div>
+        <div class="flex flex-col items-center text-center">
+          <svg class="w-6 h-6 text-[#5B7FA8] mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+          </svg>
+          <h3 class="font-semibold text-lg text-[#1A1A1A]">粉絲互動中斷</h3>
+          <p class="mt-2 text-[#6A7A8D]">無法24小時在線導致粉絲流失</p>
+        </div>
+        <div class="flex flex-col items-center text-center">
+          <svg class="w-6 h-6 text-[#5B7FA8] mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M5 13l4 4L19 7"/>
+          </svg>
+          <h3 class="font-semibold text-lg text-[#1A1A1A]">變現機會流失</h3>
+          <p class="mt-2 text-[#6A7A8D]">長時間回覆影響付費轉化率</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="py-16">
+    <div class="container mx-auto px-6">
+      <!-- Feature 1 -->
+      <div class="flex flex-col lg:flex-row items-center gap-8 mb-16">
+        <div class="w-full lg:w-1/2">
+          <img src="data:image/png;base64,2025-11-26T03:23:20.000Z" alt="快速建立 AI 分身" class="w-full rounded-lg shadow">
+        </div>
+        <div class="w-full lg:w-1/2">
+          <h3 class="font-serif text-2xl text-[#1A1A1A]">快速建立 AI 分身</h3>
+          <p class="mt-4 text-[#6A7A8D]">僅需10分鐘即可創建專屬個人化 AI 分身，迅速上線與粉絲互動。</p>
+        </div>
+      </div>
+      <!-- Feature 2 -->
+      <div class="flex flex-col lg:flex-row-reverse items-center gap-8 mb-16">
+        <div class="w-full lg:w-1/2">
+          <img src="data:image/png;base64,2025-11-26T03:24:05.000Z" alt="保持真實 KOL 語氣" class="w-full rounded-lg shadow">
+        </div>
+        <div class="w-full lg:w-1/2">
+          <h3 class="font-serif text-2xl text-[#1A1A1A]">保持真實 KOL 語氣</h3>
+          <p class="mt-4 text-[#6A7A8D]">AI 模擬 KOL 語氣與聲音，維持品牌風格一致，增進粉絲信任感。</p>
+        </div>
+      </div>
+      <!-- Other Features -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-[#E5EBF2] p-6 rounded-lg flex items-start gap-4">
+          <svg class="w-6 h-6 text-[#5B7FA8]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M5 13l4 4L19 7"/>
+          </svg>
+          <div>
+            <h4 class="font-semibold text-[#1A1A1A]">即問即付輕鬆變現</h4>
+            <p class="mt-2 text-[#6A7A8D]">自動彈出付費視窗，粉絲問答即時付費，收益透明可追蹤。</p>
+          </div>
+        </div>
+        <div class="bg-[#E5EBF2] p-6 rounded-lg flex items-start gap-4">
+          <svg class="w-6 h-6 text-[#5B7FA8]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M5 13l4 4L19 7"/>
+          </svg>
+          <div>
+            <h4 class="font-semibold text-[#1A1A1A]">智慧問答記憶庫</h4>
+            <p class="mt-2 text-[#6A7A8D]">積累常見問答，自動優化回覆，提升效率與準確度。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section id="howitworks" class="bg-[#EEF3F7] py-16">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-serif text-center text-[#1A1A1A]">使用步驟</h2>
+      <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg flex flex-col items-start">
+          <div class="w-10 h-10 flex items-center justify-center rounded-full bg-[#5B7FA8] text-white font-bold">1</div>
+          <h3 class="mt-4 font-semibold text-[#1A1A1A]">步驟1</h3>
+          <p class="mt-2 text-[#6A7A8D]">匯入影片、文章或講稿，生成專屬 AI 分身。</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg flex flex-col items-start">
+          <div class="w-10 h-10 flex items-center justify-center rounded-full bg-[#5B7FA8] text-white font-bold">2</div>
+          <h3 class="mt-4 font-semibold text-[#1A1A1A]">步驟2</h3>
+          <p class="mt-2 text-[#6A7A8D]">設定 KOL 語氣與語音，模擬真實聲線特徵。</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg flex flex-col items-start">
+          <div class="w-10 h-10 flex items-center justify-center rounded-full bg-[#5B7FA8] text-white font-bold">3</div>
+          <h3 class="mt-4 font-semibold text-[#1A1A1A]">步驟3</h3>
+          <p class="mt-2 text-[#6A7A8D]">啟用自動付費視窗，粉絲提問即時付費。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="pricing" class="py-16">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-serif text-center text-[#1A1A1A]">方案選擇</h2>
+      <div class="mt-12 flex flex-col md:flex-row gap-8">
+        <!-- Free Plan -->
+        <div class="flex-1 bg-[#EEF3F7] p-8 rounded-lg flex flex-col">
+          <h3 class="text-2xl font-semibold text-[#1A1A1A]">免費方案</h3>
+          <p class="mt-2 text-xl font-bold text-[#1A1A1A]">NT$0</p>
+          <ul class="mt-4 space-y-2">
+            <li class="flex items-center gap-2 text-[#6A7A8D]">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M5 13l4 4L19 7"/>
+              </svg>
+              每月最多50條問答
+            </li>
+            <li class="flex items-center gap-2 text-[#6A7A8D]">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M5 13l4 4L19 7"/>
+              </svg>
+              基本記憶庫功能
+            </li>
+          </ul>
+          <button class="mt-auto w-full py-4 bg-[#5B7FA8] hover:bg-[#4A6E97] text-white rounded-lg font-semibold">立即選擇</button>
+        </div>
+        <!-- Pro Plan -->
+        <div class="flex-1 bg-[#EEF3F7] p-8 rounded-lg flex flex-col">
+          <h3 class="text-2xl font-semibold text-[#1A1A1A]">專業方案</h3>
+          <p class="mt-2 text-xl font-bold text-[#1A1A1A]">NT$29/月</p>
+          <ul class="mt-4 space-y-2">
+            <li class="flex items-center gap-2 text-[#6A7A8D]">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M5 13l4 4L19 7"/>
+              </svg>
+              無上限問答使用
+            </li>
+            <li class="flex items-center gap-2 text-[#6A7A8D]">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M5 13l4 4L19 7"/>
+              </svg>
+              進階記憶庫優化
+            </li>
+            <li class="flex items-center gap-2 text-[#6A7A8D]">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M5 13l4 4L19 7"/>
+              </svg>
+              優先客戶支援
+            </li>
+          </ul>
+          <button class="mt-auto w-full py-4 bg-[#5B7FA8] hover:bg-[#4A6E97] text-white rounded-lg font-semibold">立即升級</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section id="cta" class="bg-[#2A3441] py-16">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="font-serif text-3xl text-white">加入等候名單</h2>
+      <p class="mt-4 text-white/70">搶先體驗 Dreamake AI 分身，全自動回覆並變現</p>
+      <form action="https://hook.us2.make.com/5z0gf5jwihdjvk59wcidkxxtroh52jm1" method="POST" class="max-w-md mx-auto mt-8">
+        <input type="hidden" name="idea_name" value="夢製者">
+        <input type="email" name="email" required class="w-full px-6 py-4 border-2 bg-white/10 text-white rounded-lg mb-4" placeholder="輸入你的 Email">
+        <button type="submit" class="w-full bg-[#5B7FA8] hover:bg-[#4A6E97] text-white font-bold py-4 px-8 rounded-lg">立即加入等候名單</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#EEF3F7] py-6 text-center text-[#6A7A8D]">
+    © 2025 夢製者. All rights reserved.
+  </footer>
+
+  <script>
+    const btn = document.getElementById('nav-toggle');
+    const menu = document.getElementById('nav-menu');
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>
