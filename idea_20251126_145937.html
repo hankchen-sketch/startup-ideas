@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>🔥 Dreamake – 讓你的粉絲有問必答，KOL 變身24h收錢小幫手</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['Playfair Display', 'serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="bg-[#FAF8F3] text-[#1A1A1A]">
+
+  <!-- Navigation Header -->
+  <nav class="bg-[#FAF8F3] border-b border-[#EDE7DC] sticky top-0 z-50 backdrop-blur-sm bg-opacity-95">
+    <div class="max-w-7xl mx-auto px-6 py-4">
+      <div class="flex justify-between items-center">
+        <div class="flex items-center">
+          <span class="text-[#1A1A1A] font-serif text-2xl font-bold">
+            🔥 Dreamake – 讓你的粉絲有問必答，KOL 變身24h收錢小幫手
+          </span>
+        </div>
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="#features" class="text-[#6B5D52] hover:text-[#EA6A47] transition">核心功能</a>
+          <a href="#how-it-works" class="text-[#6B5D52] hover:text-[#EA6A47] transition">使用步驟</a>
+          <a href="#pricing" class="text-[#6B5D52] hover:text-[#EA6A47] transition">方案</a>
+          <a href="#cta" class="bg-[#EA6A47] text-white px-6 py-2 rounded-lg hover:bg-[#D95A3A] transition font-semibold">
+            加入等候名單
+          </a>
+        </div>
+        <button class="md:hidden text-[#1A1A1A]" onclick="toggleMobileMenu()">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+      <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 space-y-3">
+        <a href="#features" class="block text-[#6B5D52] hover:text-[#EA6A47] transition">核心功能</a>
+        <a href="#how-it-works" class="block text-[#6B5D52] hover:text-[#EA6A47] transition">使用步驟</a>
+        <a href="#pricing" class="block text-[#6B5D52] hover:text-[#EA6A47] transition">方案</a>
+        <a href="#cta" class="block bg-[#EA6A47] text-white px-6 py-2 rounded-lg text-center hover:bg-[#D95A3A] transition">
+          加入等候名單
+        </a>
+      </div>
+    </div>
+  </nav>
+  <script>
+    function toggleMobileMenu() {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    }
+  </script>
+
+  <!-- Hero Section -->
+  <section class="bg-[#FAF8F3] py-24 md:py-32 lg:py-40">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h1 class="text-[#1A1A1A] font-serif text-5xl md:text-6xl lg:text-7xl font-bold mb-6">
+        你想秒回粉絲嗎？
+      </h1>
+      <p class="text-[#6B5D52] text-lg md:text-xl lg:text-2xl mb-2">
+        你是否被私訊淹沒？
+      </p>
+      <p class="text-[#8B7E74] text-lg md:text-xl lg:text-2xl mb-8">
+        讓 AI 分身幫你自動回覆
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-4">
+        <a href="#cta" class="bg-[#EA6A47] text-white hover:bg-[#D95A3A] py-4 px-8 rounded-lg font-semibold transition duration-300">
+          免費開始使用
+        </a>
+        <a href="#features" class="bg-[#F5F0E8] text-[#3D2E28] hover:bg-[#EDE7DC] py-4 px-8 rounded-lg font-semibold transition duration-300">
+          了解更多
+        </a>
+      </div>
+      <p class="text-sm text-[#8B7E74]">
+        ✓ 完全免費  ✓ 無需信用卡  ✓ 2 分鐘快速設定
+      </p>
+    </div>
+  </section>
+
+  <!-- Problem Section -->
+  <section class="bg-[#EDE7DC] py-20 md:py-28">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-[#1A1A1A] font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-4">
+        為什麼你需要它？
+      </h2>
+      <p class="text-[#6B5D52] text-xl text-center mb-12">
+        因為這些問題每天都在發生
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-[#F5F0E8] p-8 rounded-xl">
+          <div class="bg-[#FFF4ED] w-20 h-20 rounded-2xl flex items-center justify-center mb-6">
+            <span class="text-5xl">💬</span>
+          </div>
+          <h3 class="text-[#1A1A1A] font-serif font-semibold text-xl mb-3">
+            訊息堆積成山
+          </h3>
+          <p class="text-[#6B5D52] text-base leading-relaxed">
+            IG/FB 私訊一湧而入，回到最後還有好幾條沒回，不知從何開始。
+          </p>
+        </div>
+        <div class="bg-[#F5F0E8] p-8 rounded-xl">
+          <div class="bg-[#FFF4ED] w-20 h-20 rounded-2xl flex items-center justify-center mb-6">
+            <span class="text-5xl">⏱️</span>
+          </div>
+          <h3 class="text-[#1A1A1A] font-serif font-semibold text-xl mb-3">
+            回覆速度太慢
+          </h3>
+          <p class="text-[#6B5D52] text-base leading-relaxed">
+            粉絲期待即時互動，龐大訊息量讓你回覆不及時，影響忠誠度。
+          </p>
+        </div>
+        <div class="bg-[#F5F0E8] p-8 rounded-xl">
+          <div class="bg-[#FFF4ED] w-20 h-20 rounded-2xl flex items-center justify-center mb-6">
+            <span class="text-5xl">🚀</span>
+          </div>
+          <h3 class="text-[#1A1A1A] font-serif font-semibold text-xl mb-3">
+            錯過商機
+          </h3>
+          <p class="text-[#6B5D52] text-base leading-relaxed">
+            沒時間整理對話，創作靈感與商機訊息常被埋沒。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Transition -->
+  <section class="bg-[#FAF8F3] py-8 md:py-12">
+    <p class="text-2xl md:text-3xl text-[#6B5D52] font-serif italic text-center">
+      現在，這一切都能輕鬆解決
+    </p>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="bg-[#FAF8F3] py-20 md:py-28">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-[#1A1A1A] font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-12">
+        秒懂重點，節省時間
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-[#F5F0E8] p-8 rounded-xl hover:transform hover:-translate-y-1 transition duration-300">
+          <div class="bg-[#FFF4ED] w-20 h-20 rounded-full flex items-center justify-center mb-6">
+            <span class="text-5xl">🎯</span>
+          </div>
+          <h3 class="text-[#1A1A1A] font-serif font-semibold text-2xl mb-3">
+            秒懂重點
+          </h3>
+          <p class="text-[#6B5D52] text-base leading-relaxed">
+            自動摘要粉絲提問，快速掌握需求，立刻回覆。
+          </p>
+        </div>
+        <div class="bg-[#F5F0E8] p-8 rounded-xl hover:transform hover:-translate-y-1 transition duration-300">
+          <div class="bg-[#FFF4ED] w-20 h-20 rounded-full flex items-center justify-center mb-6">
+            <span class="text-5xl">🗣️</span>
+          </div>
+          <h3 class="text-[#1A1A1A] font-serif font-semibold text-2xl mb-3">
+            自然語音回覆
+          </h3>
+          <p class="text-[#6B5D52] text-base leading-relaxed">
+            文字/語音雙模式，增強粉絲互動體驗。
+          </p>
+        </div>
+        <div class="bg-[#F5F0E8] p-8 rounded-xl hover:transform hover:-translate-y-1 transition duration-300">
+          <div class="bg-[#FFF4ED] w-20 h-20 rounded-full flex items-center justify-center mb-6">
+            <span class="text-5xl">📚</span>
+          </div>
+          <h3 class="text-[#1A1A1A] font-serif font-semibold text-2xl mb-3">
+            持久記憶
+          </h3>
+          <p class="text-[#6B5D52] text-base leading-relaxed">
+            記住常見 Q&A 與個人風格，回覆更貼近品牌聲音。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section id="how-it-works" class="bg-[#EDE7DC] py-20 md:py-28">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-[#1A1A1A] font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-12">
+        三步驟，立即開始
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div class="text-center">
+          <div class="bg-[#EA6A47] text-white text-3xl font-bold w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
+            1
+          </div>
+          <h3 class="text-[#1A1A1A] font-serif font-semibold text-xl mb-3">
+            建立分身
+          </h3>
+          <p class="text-[#6B5D52] text-base">
+            上傳影片或文章
+          </p>
+        </div>
+        <div class="text-center">
+          <div class="bg-[#EA6A47] text-white text-3xl font-bold w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
+            2
+          </div>
+          <h3 class="text-[#1A1A1A] font-serif font-semibold text-xl mb-3">
+            調整設定
+          </h3>
+          <p class="text-[#6B5D52] text-base">
+            選擇文字或語音回覆
+          </p>
+        </div>
+        <div class="text-center">
+          <div class="bg-[#EA6A47] text-white text-3xl font-bold w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
+            3
+          </div>
+          <h3 class="text-[#1A1A1A] font-serif font-semibold text-xl mb-3">
+            開始接單
+          </h3>
+          <p class="text-[#6B5D52] text-base">
+            自動回覆並收費
+          </p>
+        </div>
+      </div>
+      <p class="text-lg text-[#6B5D52] text-center mt-12">
+        就是這麼簡單！現在就開始吧 👇
+      </p>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="pricing" class="bg-[#FAF8F3] py-20 md:py-28">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-[#1A1A1A] font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-4">
+        簡單透明的方案
+      </h2>
+      <p class="text-[#6B5D52] text-xl text-center mb-12">
+        從免費開始，隨時升級
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+        <div class="bg-[#F5F0E8] p-8 rounded-xl flex flex-col">
+          <h3 class="text-[#1A1A1A] font-serif font-bold text-2xl mb-2">免費方案</h3>
+          <p class="text-[#8B7E74] mb-6">適合個人使用</p>
+          <p class="text-[#1A1A1A] text-4xl font-bold mb-6">$0<span class="text-xl text-[#8B7E74]">/月</span></p>
+          <ul class="space-y-3 mb-8 flex-grow">
+            <li class="text-[#6B5D52] flex items-start">
+              <span class="text-[#EA6A47] mr-2">✓</span>
+              <span>基礎摘要功能</span>
+            </li>
+            <li class="text-[#6B5D52] flex items-start">
+              <span class="text-[#EA6A47] mr-2">✓</span>
+              <span>基礎回覆功能</span>
+            </li>
+          </ul>
+          <a href="#cta" class="block text-center bg-[#EDE7DC] text-[#1A1A1A] py-3 px-6 rounded-lg hover:bg-[#FAF8F3] transition font-semibold mt-auto">
+            開始使用
+          </a>
+        </div>
+        <div class="bg-[#EA6A47] p-8 rounded-xl text-white relative flex flex-col">
+          <div class="absolute -top-4 right-4 bg-[#3D2E28] text-white px-4 py-1 rounded-full text-sm font-semibold">
+            最受歡迎
+          </div>
+          <h3 class="font-serif font-bold text-2xl mb-2">專業方案</h3>
+          <p class="opacity-90 mb-6">適合團隊使用</p>
+          <p class="text-4xl font-bold mb-6">$29<span class="text-xl opacity-90">/月</span></p>
+          <ul class="space-y-3 mb-8 flex-grow">
+            <li class="flex items-start">
+              <span class="mr-2">✓</span>
+              <span>免費方案所有功能</span>
+            </li>
+            <li class="flex items-start">
+              <span class="mr-2">✓</span>
+              <span>進階分群分析</span>
+            </li>
+            <li class="flex items-start">
+              <span class="mr-2">✓</span>
+              <span>優先客製支援</span>
+            </li>
+          </ul>
+          <a href="#cta" class="block text-center bg-white text-[#EA6A47] py-3 px-6 rounded-lg hover:bg-opacity-90 transition font-semibold mt-auto">
+            立即升級
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section id="cta" class="bg-[#3D2E28] py-24 md:py-32">
+    <div class="max-w-2xl mx-auto px-6">
+      <h2 class="text-[#FAF8F3] font-serif text-4xl md:text-5xl font-bold text-center mb-4">
+        成為首批體驗者
+      </h2>
+      <p class="text-[#EDE7DC] text-xl text-center mb-8">
+        提早加入，獲得專屬優惠 🎁
+      </p>
+      <form action="https://hook.us2.make.com/5z0gf5jwihdjvk59wcidkxxtroh52jm1" method="POST" class="max-w-md mx-auto">
+        <input type="hidden" name="idea_name" value="🔥 Dreamake – 讓你的粉絲有問必答，KOL 變身24h收錢小幫手&#10;&#10;😤 誰在崩潰？&#10;> “IG/FB私訊堆滿一整頁，想回又回不完，粉絲問到崩潰😭”&#10;&#10;🛠️ 我們的切入點&#10;• MVP核心：10分鍾自動建立AI分身＋文字/語音回答＋超額付費彈窗&#10;• 技術亮點：從KOL影片/文章自動抓風格＋持久記憶常見Q&A&#10;&#10;🥊 競品雷達 (Competitor Watch)&#10;* Character.AI/Replika：強在陪聊娛樂 vs 我們主打「創作者×粉絲」專業問答（https://character.ai）&#10;* GPTs/Gemini：泛用邏輯回答 vs 我們維持KOL語氣、按次收費&#10;&#10;🤔 團隊腦力激盪：&#10;如果分身累積上千條粉絲對話，要怎麼用AI智能自動分群分類，讓KOL一眼抓到最關鍵的商機或創作靈感？">
+        <div class="mb-4">
+          <input type="email" name="email" required class="w-full px-6 py-4 text-lg border-2 border-[#EDE7DC] bg-white/10 text-white placeholder-[#8B7E74] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#EA6A47] transition backdrop-blur-sm" placeholder="輸入你的 Email">
+        </div>
+        <button type="submit" class="w-full bg-[#EA6A47] text-white font-bold text-lg py-4 px-8 rounded-lg hover:bg-[#D95A3A] transition duration-300 transform hover:scale-105">
+          立即加入等候名單 →
+        </button>
+      </form>
+      <p class="text-sm text-[#8B7E74] text-center mt-4">
+        ✓ 我們重視隱私，絕不外洩你的資料  ✓ 隨時可取消訂閱
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#FAF8F3] border-t border-[#EDE7DC] py-12">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+        <div class="md:col-span-2">
+          <h3 class="text-[#1A1A1A] font-serif text-xl font-bold mb-3">
+            🔥 Dreamake
+          </h3>
+          <p class="text-[#6B5D52] text-sm">
+            讓你的粉絲有問必答，KOL 24h 小幫手
+          </p>
+        </div>
+        <div>
+          <h4 class="text-[#1A1A1A] font-semibold mb-3">產品</h4>
+          <ul class="space-y-2">
+            <li><a href="#features" class="text-[#6B5D52] hover:text-[#EA6A47] text-sm transition">功能</a></li>
+            <li><a href="#pricing" class="text-[#6B5D52] hover:text-[#EA6A47] text-sm transition">方案</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-[#1A1A1A] font-semibold mb-3">公司</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-[#6B5D52] hover:text-[#EA6A47] text-sm transition">關於我們</a></li>
+            <li><a href="#" class="text-[#6B5D52] hover:text-[#EA6A47] text-sm transition">聯絡我們</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-[#EDE7DC] pt-8 text-center">
+        <p class="text-[#8B7E74] text-sm">
+          © 2024 Dreamake. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
